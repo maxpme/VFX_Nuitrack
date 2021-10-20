@@ -1,0 +1,1558 @@
+Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.14f1 (51d2f824827f) revision 5362424'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home Single Language; OS build 19043.1288; Version 2009; 64bit' Language: 'ru' Physical Memory: 6019 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\2021.1.14f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker68
+-projectPath
+D:/Unity Projects/VFX_Nuitrack
+-logFile
+Logs/AssetImportWorker68.log
+-srvPort
+51814
+Successfully changed project path to: D:/Unity Projects/VFX_Nuitrack
+D:/Unity Projects/VFX_Nuitrack
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 313.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.14f1 (51d2f824827f)
+[Subsystems] Discovering subsystems at path C:/Program Files/2021.1.14f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity Projects/VFX_Nuitrack/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 940MX (ID=0x134d)
+    Vendor:   NVIDIA
+    VRAM:     2010 MB
+    Driver:   30.0.14.9613
+Initialize mono
+Mono path[0] = 'C:/Program Files/2021.1.14f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/2021.1.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/2021.1.14f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56012
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/2021.1.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005413 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 281.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  6.728 seconds
+Domain Reload Profiling:
+	ReloadAssembly (6728ms)
+		BeginReloadAssembly (106ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1363ms)
+			LoadAssemblies (102ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (458ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (90ms)
+			SetupLoadedEditorAssemblies (712ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (281ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (335ms)
+				ProcessInitializeOnLoadMethodAttributes (68ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.012944 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Unity Projects\VFX_Nuitrack\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity Projects\VFX_Nuitrack\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 340.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Il2cpp Dll not found: Assets/NuitrackSDK/Nuitrack/NuitrackAssembly/IL2CPP/nuitrack.net.dll
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+SwitchDll:Check () (at Assets/NuitrackSDK/Nuitrack/Scripts/Editor/SwitchDll.cs:34)
+SwitchDll:.cctor () (at Assets/NuitrackSDK/Nuitrack/Scripts/Editor/SwitchDll.cs:17)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/NuitrackSDK/Nuitrack/Scripts/Editor/SwitchDll.cs Line: 34)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  7.682 seconds
+Domain Reload Profiling:
+	ReloadAssembly (7683ms)
+		BeginReloadAssembly (423ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (34ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (7121ms)
+			LoadAssemblies (231ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1049ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (241ms)
+			SetupLoadedEditorAssemblies (5291ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (341ms)
+				BeforeProcessingInitializeOnLoad (239ms)
+				ProcessInitializeOnLoadAttributes (1263ms)
+				ProcessInitializeOnLoadMethodAttributes (3422ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 2.49 seconds
+D3D shader create error for vertex shader [0x80070057]
+D3D shader create error for vertex shader [0x80070057]
+D3D shader create error for vertex shader [0x80070057]
+D3D shader create error for vertex shader [0x80070057]
+D3D shader create error for domain shader [0x80070057]
+D3D shader create error for domain shader [0x80070057]
+Refreshing native plugins compatible for Editor in 2.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5271 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 222.7 MB.
+System memory in use after: 223.1 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 5735.
+Total: 9.378600 ms (FindLiveObjects: 1.151200 ms CreateObjectMapping: 0.932000 ms MarkObjects: 7.131300 ms  DeleteObjects: 0.161300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/vfx_nuitrack/Cubes.vfx
+  artifactKey: Guid(290f003cb6e30774bbca1a7c0a9fd418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/vfx_nuitrack/Cubes.vfx using Guid(290f003cb6e30774bbca1a7c0a9fd418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '120b1b99d24f6f0b94aee3203c1ac6cb') in 0.135478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 301.935331 seconds.
+  path: Assets/HDRPDefaultResources/DefaultLookDevProfile.asset
+  artifactKey: Guid(efd53c1db78fc1b44a5a56a103247506) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/HDRPDefaultResources/DefaultLookDevProfile.asset using Guid(efd53c1db78fc1b44a5a56a103247506) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '61bfc17fc058eeeb2345c950d8511a37') in 0.506488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007844 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Materials/eyeline.mat
+  artifactKey: Guid(7bac98231102243919a4534a06cc74ba) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Materials/eyeline.mat using Guid(7bac98231102243919a4534a06cc74ba) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0788abee787a8aa65a918cefca410088') in 0.288398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000487 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Materials/eyebase.mat
+  artifactKey: Guid(c7d8484a18b294b4ea192d6a82f2e0d5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Materials/eyebase.mat using Guid(c7d8484a18b294b4ea192d6a82f2e0d5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd852f2413ef5729081da5b355a9279cc') in 0.141981 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001145 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Materials/skin1.mat
+  artifactKey: Guid(4b91d906c72fd4447bfabbdd767e31ad) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Materials/skin1.mat using Guid(4b91d906c72fd4447bfabbdd767e31ad) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '83dcc902970da066ec63b147845ee318') in 0.160239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001071 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/hair.mat
+  artifactKey: Guid(5ebb6caef8207d243a588a574971408c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/hair.mat using Guid(5ebb6caef8207d243a588a574971408c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5ccf357a0dfa1e94da81b669250090e7') in 0.230270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000828 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/FO_RIM1.tga
+  artifactKey: Guid(a18067604964b5a4d8fd5552ed0d789e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/FO_RIM1.tga using Guid(a18067604964b5a4d8fd5552ed0d789e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '28f975b4ae431cb7e81ae77ccbd07538') in 0.300511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000508 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/FO_SKIN1.tga
+  artifactKey: Guid(a1d5b2277eb3f6245900378e6fa97575) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/FO_SKIN1.tga using Guid(a1d5b2277eb3f6245900378e6fa97575) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'de4ff94bd33dc0b48c774944b464c784') in 0.104526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000441 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Materials/face.mat
+  artifactKey: Guid(cb35fb92776d24a65827b1d3ab18fe60) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Materials/face.mat using Guid(cb35fb92776d24a65827b1d3ab18fe60) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5424f58dbf0f778a91202f6c4b60470b') in 0.059903 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001095 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/Skeleton/Materials/Joint3.mat
+  artifactKey: Guid(5ce64df27a294224e8cf588ecef39d95) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/Skeleton/Materials/Joint3.mat using Guid(5ce64df27a294224e8cf588ecef39d95) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '15e7f44144fd8fce0d960efad99d36ed') in 0.294965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002070 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_eye_blend.shader
+  artifactKey: Guid(bf944057124b80b4e84496139e3b072c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_eye_blend.shader using Guid(bf944057124b80b4e84496139e3b072c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '39c9b96788b407433844eeca609ceb6b') in 0.123364 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000474 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/Skeleton/Materials/Joint1.mat
+  artifactKey: Guid(1659710e7bada8043a5875186f0ca81b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/Skeleton/Materials/Joint1.mat using Guid(1659710e7bada8043a5875186f0ca81b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '19f599c78b9f35db3b5ae4b54cf62622') in 0.083957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001319 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/CharaMain.cg
+  artifactKey: Guid(c3d0f1648f39e1a408ca5a56b25e96bf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/CharaMain.cg using Guid(c3d0f1648f39e1a408ca5a56b25e96bf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd472c9547c563fd9456366ff228b036f') in 0.161575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000375 seconds.
+  path: Assets/NuitrackSDK/NuitrackCalibrationRGB/Textures/Plane_for_RGB_calibration.FBX
+  artifactKey: Guid(23aaa39bbaf239b49b3edb38acd63370) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackCalibrationRGB/Textures/Plane_for_RGB_calibration.FBX using Guid(23aaa39bbaf239b49b3edb38acd63370) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '2a01447f0dfbe133c12e44acafba9c83') in 0.338886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000464 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_eyelash_blend.shader
+  artifactKey: Guid(9627902a73805264c818754ecb22c8f9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_eyelash_blend.shader using Guid(9627902a73805264c818754ecb22c8f9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '23f5581cce2a1cbaf99a23e381ebfd2d') in 0.065978 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000442 seconds.
+  path: Assets/NuitrackSDK/Frame/Shaders/BGR2RGB.compute
+  artifactKey: Guid(58f62cdaf65397d47954aa38b3b3cf12) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Frame/Shaders/BGR2RGB.compute using Guid(58f62cdaf65397d47954aa38b3b3cf12) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8515d9a8334c2b9382fc2c70be552419') in 0.128791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000464 seconds.
+  path: Assets/NuitrackSDK/Avatar/UI Avatar/Prefabs/Skeletons Canvas.prefab
+  artifactKey: Guid(36fe4acdda22b1f4b846d1c631c59d55) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/UI Avatar/Prefabs/Skeletons Canvas.prefab using Guid(36fe4acdda22b1f4b846d1c631c59d55) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'af76ffcfd326ffa790d1687d17b979c4') in 0.086020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000438 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/FO_CLOTH1.tga
+  artifactKey: Guid(cc8f70f2ec571e9478efa98c041cde7b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/FO_CLOTH1.tga using Guid(cc8f70f2ec571e9478efa98c041cde7b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ac28c6f3d2fee6cabe09a6ad18e22f4c') in 0.115530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000555 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/Materials/UI_Z_Ignore_font.mat
+  artifactKey: Guid(e2d2b2a21115c7f46ad8c7e08a2e41a2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/Materials/UI_Z_Ignore_font.mat using Guid(e2d2b2a21115c7f46ad8c7e08a2e41a2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a6866d18144e0ccc7e6397508945960a') in 0.116249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000460 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/Scripts/NuitrackErrorSolver.cs
+  artifactKey: Guid(9b4832016c09f244c9c1f504e026493f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/Scripts/NuitrackErrorSolver.cs using Guid(9b4832016c09f244c9c1f504e026493f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4e7e4bc1546bf688adf8efeefcf75396') in 0.111114 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000398 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Prefabs/IssuesProcessor.prefab
+  artifactKey: Guid(b8cbfca57a33c9a47b2e53e88cc5ce39) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Prefabs/IssuesProcessor.prefab using Guid(b8cbfca57a33c9a47b2e53e88cc5ce39) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ea0d7655fee569291222c1016a01f6e9') in 0.128841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000445 seconds.
+  path: Assets/HDRPDefaultResources/SkinDiffusionProfile.asset
+  artifactKey: Guid(b8badfbf1326b5442bbe01ef35b45f07) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/HDRPDefaultResources/SkinDiffusionProfile.asset using Guid(b8badfbf1326b5442bbe01ef35b45f07) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '29dc800111daf480a683551104d3d729') in 0.126821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000488 seconds.
+  path: Assets/NuitrackSDK/Frame/Scripts/ToTextureModules/SegmentToTexture.cs
+  artifactKey: Guid(b3db7809a8825bb4fab08f5775e221fd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Frame/Scripts/ToTextureModules/SegmentToTexture.cs using Guid(b3db7809a8825bb4fab08f5775e221fd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c23848b29956f6bf5625e124a12f52a0') in 0.093443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000495 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/Skeleton/Materials/Joint0.mat
+  artifactKey: Guid(874670faae8ee5149bea1da3b4615b50) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/Skeleton/Materials/Joint0.mat using Guid(874670faae8ee5149bea1da3b4615b50) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b0c8d7305936762ff9c47c36f088dd9d') in 0.072565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000658 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/CharaOutline.cg
+  artifactKey: Guid(98e9eccf54dd0e34c9cb77865555483f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/CharaOutline.cg using Guid(98e9eccf54dd0e34c9cb77865555483f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '03aa730c5aa6abae7ce66a14085f5164') in 0.095228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001109 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/cheek_00.tga
+  artifactKey: Guid(89ede59217e3847c39c444f223f4084e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/cheek_00.tga using Guid(89ede59217e3847c39c444f223f4084e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '96ecc75590d79948b7a79a4cdc821e8c') in 0.064044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000459 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/Skeleton/Materials/Joint2.mat
+  artifactKey: Guid(14dbf30c0c8c7da4d85aa6e4dbbdfa68) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/Skeleton/Materials/Joint2.mat using Guid(14dbf30c0c8c7da4d85aa6e4dbbdfa68) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ec60e3367b3b33012bc89b2c9720a9b8') in 0.087641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000450 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/eyeline.mat
+  artifactKey: Guid(407f97b032a277c44b753ed1c256a3b8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/eyeline.mat using Guid(407f97b032a277c44b753ed1c256a3b8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4d057b341e374e042e6d1e644c62594e') in 0.057525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000506 seconds.
+  path: Assets/NuitrackSDK/NuitrackCalibrationRGB/Textures/Chelovek.png
+  artifactKey: Guid(daad1295f2f0149468c08ac4741b0c6c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackCalibrationRGB/Textures/Chelovek.png using Guid(daad1295f2f0149468c08ac4741b0c6c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '89323c22377158c66deb4fdd2317bfce') in 0.333103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000477 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_hada.shader
+  artifactKey: Guid(b35a2abbdd5b15d4ca40103088758eac) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_hada.shader using Guid(b35a2abbdd5b15d4ca40103088758eac) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '936def7cfb9172c0ce9001adf6303131') in 0.106150 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000434 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/Scripts/Editor/SwitchDll.cs
+  artifactKey: Guid(11bca3884c6d9ba40b1a974ab9aa7b49) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/Scripts/Editor/SwitchDll.cs using Guid(11bca3884c6d9ba40b1a974ab9aa7b49) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '1cf1876ac82c413407e522daea5e70f7') in 0.108578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001123 seconds.
+  path: Assets/NuitrackSDK/NuitrackCalibrationRGB/Materials/Unlit-GS.shader
+  artifactKey: Guid(6730db9b14493e74c9264228c8c32336) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackCalibrationRGB/Materials/Unlit-GS.shader using Guid(6730db9b14493e74c9264228c8c32336) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5fa7a8a1fc7e47b3ce78b618a2fcf2c7') in 0.113387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000442 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_hair_ds.shader
+  artifactKey: Guid(235ca6f7bbc0ead4990f386a7ec24292) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_hair_ds.shader using Guid(235ca6f7bbc0ead4990f386a7ec24292) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c224249371d5a7455e4487c0645f7f3c') in 0.085419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000396 seconds.
+  path: Assets/NuitrackSDK/Frame/Scripts/FrameUtils.cs
+  artifactKey: Guid(97de8be9e9f0c6e4da4b9d4a4a25aa7a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Frame/Scripts/FrameUtils.cs using Guid(97de8be9e9f0c6e4da4b9d4a4a25aa7a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '3e6cc5cc54f8219073515f1ca6e6a34d') in 0.092125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004666 seconds.
+  path: Assets/NuitrackSDK/SafetyGrid/Models/Materials/CrestChanged.mat
+  artifactKey: Guid(7196b82859fb92a4691c553cbb6ebb8d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/SafetyGrid/Models/Materials/CrestChanged.mat using Guid(7196b82859fb92a4691c553cbb6ebb8d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '78359bb4c5f7e4753e7524208da08f6c') in 0.298416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000866 seconds.
+  path: Assets/vfx_nuitrack/VFXManager.cs
+  artifactKey: Guid(ed7de8e60e42ad049b79459045c4c312) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/vfx_nuitrack/VFXManager.cs using Guid(ed7de8e60e42ad049b79459045c4c312) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '27424e6053138349a6245b983b88c664') in 0.278271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000529 seconds.
+  path: Assets/NuitrackSDK/SafetyGrid/Models/Grid_3cell_v2.FBX
+  artifactKey: Guid(8f7f3154488fa9b4e88fe3d7dc4e1872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/SafetyGrid/Models/Grid_3cell_v2.FBX using Guid(8f7f3154488fa9b4e88fe3d7dc4e1872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b47303bec8a69258aad6332781b080e5') in 0.391991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002381 seconds.
+  path: Assets/NuitrackSDK/NuitrackCalibrationRGB/Scripts/RGBCalibrationVisualizer.cs
+  artifactKey: Guid(ac8bfacf17df19b4095b763f3a5f2b42) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackCalibrationRGB/Scripts/RGBCalibrationVisualizer.cs using Guid(ac8bfacf17df19b4095b763f3a5f2b42) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '318467e0027bedc150aeb12fe4262b26') in 0.270936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003388 seconds.
+  path: Assets/NuitrackSDK/Frame/Scripts/UI/NuitrackAspectRatioFitter.cs
+  artifactKey: Guid(377c0a00050c522428a9006e091f7b38) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Frame/Scripts/UI/NuitrackAspectRatioFitter.cs using Guid(377c0a00050c522428a9006e091f7b38) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '7ad21a730e2f87a7d0a1e57d8251cbca') in 0.177235 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002975 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/mat_cheek.mat
+  artifactKey: Guid(5f9d44654b83160428d7c4cf276b3572) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/mat_cheek.mat using Guid(5f9d44654b83160428d7c4cf276b3572) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '83c7a6c9c4385af85d974f11e84c118b') in 0.246301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001904 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Prefabs/VRAvatar.prefab
+  artifactKey: Guid(c9bc6f93c7aa21e48b52da8e2aeca9fa) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Prefabs/VRAvatar.prefab using Guid(c9bc6f93c7aa21e48b52da8e2aeca9fa) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5bbe9646714cafbd4ff249060656eace') in 0.156702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001436 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Prefabs/SubPrefabs/HeadParent.prefab
+  artifactKey: Guid(558d0be4a5425c14095922623c6a3c24) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Prefabs/SubPrefabs/HeadParent.prefab using Guid(558d0be4a5425c14095922623c6a3c24) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6f3711123ee9ff9f43ff12aa1207fef3') in 0.237462 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003520 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/Shaders/ui_zignore_image.shader
+  artifactKey: Guid(081223562052c324fabc920dae922f90) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/Shaders/ui_zignore_image.shader using Guid(081223562052c324fabc920dae922f90) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '9e5aba5e30501f0863161170c9c421a5') in 0.187585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004884 seconds.
+  path: Assets/NuitrackSDK/Frame/Scripts/UI/Editor/NuitrackAspectRatioFitter_Editor.cs
+  artifactKey: Guid(b7a1f93b86077034eb8fe56e89054a49) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Frame/Scripts/UI/Editor/NuitrackAspectRatioFitter_Editor.cs using Guid(b7a1f93b86077034eb8fe56e89054a49) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6da799946d00389aacfd2951870b5a47') in 0.187770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000561 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Scripts/ModuleVisualisations/GesturesVisualization.cs
+  artifactKey: Guid(9adfbda496fe2fa4e9ee4e754995eeac) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Scripts/ModuleVisualisations/GesturesVisualization.cs using Guid(9adfbda496fe2fa4e9ee4e754995eeac) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '844bac914b0cf97345c6ed423480a35c') in 0.146031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002573 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/NuitrackAssembly/nuitrack.net.dll
+  artifactKey: Guid(babcf23769a5aa24ea729c618bfa6639) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/NuitrackAssembly/nuitrack.net.dll using Guid(babcf23769a5aa24ea729c618bfa6639) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '89058a0654aa727a6e450484a1ee6af5') in 0.333679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000557 seconds.
+  path: Assets/NuitrackSDK/Frame/Prefabs/Segment Overlay Frame.prefab
+  artifactKey: Guid(a9f203cabfbac9a47bef58d85d134d41) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Frame/Prefabs/Segment Overlay Frame.prefab using Guid(a9f203cabfbac9a47bef58d85d134d41) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '91f657dc213ef5401c5c6368820d774b') in 0.300064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003239 seconds.
+  path: Assets/NuitrackSDK/Avatar/UI Avatar/Prefabs/SubPrefabs/ConnectionUI.prefab
+  artifactKey: Guid(8736164441ce971439b60ce99e357d9a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/UI Avatar/Prefabs/SubPrefabs/ConnectionUI.prefab using Guid(8736164441ce971439b60ce99e357d9a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'f13f3acf6a2ca13a5ee453a7fec1fbbb') in 0.229954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000565 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Materials/MeshVisMaterial.mat
+  artifactKey: Guid(82d8e95ee97e0444a8f8b66def1820fa) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Materials/MeshVisMaterial.mat using Guid(82d8e95ee97e0444a8f8b66def1820fa) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b80bdcd00c3a6d878497b4b0d4fa80dd') in 0.211318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002845 seconds.
+  path: Assets/NuitrackSDK/Pointer/Prefabs/Pointer.prefab
+  artifactKey: Guid(f845164b7c6d28b4181f05066ac5ef31) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Pointer/Prefabs/Pointer.prefab using Guid(f845164b7c6d28b4181f05066ac5ef31) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e6a3c638328d6eaffb7bd3fbaef77593') in 0.168056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000549 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Prefabs/MannequinAvatar.prefab
+  artifactKey: Guid(9bd3326ed861cdd44bd7f80ee819f2db) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Prefabs/MannequinAvatar.prefab using Guid(9bd3326ed861cdd44bd7f80ee819f2db) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '12e467ae9ec52fbef3e879dc37964dc5') in 0.086568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000482 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/Scripts/LicenseInfo.cs
+  artifactKey: Guid(08eb9a6508d56234a857f558e195550f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/Scripts/LicenseInfo.cs using Guid(08eb9a6508d56234a857f558e195550f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'f227bbeafd0b2eb7fda621109edaddb0') in 0.175422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003189 seconds.
+  path: Assets/NuitrackSDK/SensorEnvironment/SensorSpace/Editor/SensorSpace_Editor.cs
+  artifactKey: Guid(64169ae96370cdf46bf9147c960d0740) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/SensorEnvironment/SensorSpace/Editor/SensorSpace_Editor.cs using Guid(64169ae96370cdf46bf9147c960d0740) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '22a7961de0b084e1c508f51dfa3d294e') in 0.255542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004995 seconds.
+  path: Assets/NuitrackSDK/Frame/Scripts/ToTextureModules/RGBToTexture.cs
+  artifactKey: Guid(82790f186a5a283428e946a5d1993a76) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Frame/Scripts/ToTextureModules/RGBToTexture.cs using Guid(82790f186a5a283428e946a5d1993a76) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '2ac56bb3f4aed345da858bf813190fa9') in 0.240364 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002435 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Materials/body.mat
+  artifactKey: Guid(3b399c72488294c53b66f39632a8fe8b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Materials/body.mat using Guid(3b399c72488294c53b66f39632a8fe8b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'abaa673e31a85d3827baed085d10c4de') in 0.238076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001772 seconds.
+  path: Assets/NuitrackSDK/Frame/Scripts/DrawSensorFrame.cs
+  artifactKey: Guid(47f4da1a081ddeb41bdaff86f9b51471) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Frame/Scripts/DrawSensorFrame.cs using Guid(47f4da1a081ddeb41bdaff86f9b51471) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8df620b37967461005c7cfe37f50e8b3') in 0.259409 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002727 seconds.
+  path: Assets/HDRPDefaultResources/HDRenderPipelineAsset.asset
+  artifactKey: Guid(fe583805f91a4c7488b042ec6bb64e85) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/HDRPDefaultResources/HDRenderPipelineAsset.asset using Guid(fe583805f91a4c7488b042ec6bb64e85) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5dd7b9ece9ec967a2c70e5dcf7a2ad8c') in 0.296123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004761 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Scenes/VRAvatar.unity
+  artifactKey: Guid(35da5fa95e91acf4f8181f6078232c97) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Scenes/VRAvatar.unity using Guid(35da5fa95e91acf4f8181f6078232c97) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b118051fa39334e7c10fba0ad4304dc3') in 0.305603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004608 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/Skeleton/Materials/SkeletonConnections.mat
+  artifactKey: Guid(3ebd6dec28d0562458e2fdfe72c8ec0c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/Skeleton/Materials/SkeletonConnections.mat using Guid(3ebd6dec28d0562458e2fdfe72c8ec0c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '30a9c394c8f996eab064db53a342f8d4') in 0.254988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002719 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Prefabs/SkeletonJointsOrientation.prefab
+  artifactKey: Guid(1b1d71b570245594faaff98c14dd719f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Prefabs/SkeletonJointsOrientation.prefab using Guid(1b1d71b570245594faaff98c14dd719f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '9b8def3d6a2ef15d6a2738d6153a9751') in 0.240352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001585 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/Scripts/NuitrackLoader.cs
+  artifactKey: Guid(1a02870a0ffbab54f92c69b017243afb) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/Scripts/NuitrackLoader.cs using Guid(1a02870a0ffbab54f92c69b017243afb) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '60ff6c3897d9e8bc93bc560edd4a4b59') in 0.270382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002321 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/FPSCounter/FPSCounter.cs
+  artifactKey: Guid(4af2c8aa545233c4daa6eb71f2691a6c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/FPSCounter/FPSCounter.cs using Guid(4af2c8aa545233c4daa6eb71f2691a6c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '427ac6a042ab53a030b09c4683022e2f') in 0.288888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007101 seconds.
+  path: Assets/NuitrackSDK/Frame/Shaders/TextureUtils.compute
+  artifactKey: Guid(f19d640acbb385549b8f9b2f0164b66e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Frame/Shaders/TextureUtils.compute using Guid(f19d640acbb385549b8f9b2f0164b66e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '1b514947b82c5c55ebefafd9453f4fa7') in 0.269844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000558 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/Scripts/NuitrackUtils.cs
+  artifactKey: Guid(5b17cd81d2354ef43a914091aa340bfe) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/Scripts/NuitrackUtils.cs using Guid(5b17cd81d2354ef43a914091aa340bfe) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4c2c463eb0b3497bde1f9df7783563e0') in 0.253108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001795 seconds.
+  path: Assets/NuitrackSDK/Avatar/UI Avatar/Prefabs/SubPrefabs/UIAvatar.prefab
+  artifactKey: Guid(b0ba23d46bc88f94cb3d76beaebf27be) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/UI Avatar/Prefabs/SubPrefabs/UIAvatar.prefab using Guid(b0ba23d46bc88f94cb3d76beaebf27be) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '140a91d948c22d135d2b2f04dc9c33fe') in 0.263898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005083 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/CalibrationRotationScripts/TPoseCalibration.cs
+  artifactKey: Guid(e294c741cd196f940acda20d3d39a172) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/CalibrationRotationScripts/TPoseCalibration.cs using Guid(e294c741cd196f940acda20d3d39a172) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '390283d16a526b7a04cec23452c79fd9') in 0.281440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002561 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Shaders/DiffuseVertexColored.shader
+  artifactKey: Guid(bb5910aa46927764489cddaf5335b8c2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Shaders/DiffuseVertexColored.shader using Guid(bb5910aa46927764489cddaf5335b8c2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '72fd9fbdf76a761e58c70699f1202587') in 0.208788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002892 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/license.txt
+  artifactKey: Guid(293c6d95478e84c14861f9ab2a98b91f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/license.txt using Guid(293c6d95478e84c14861f9ab2a98b91f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '10464cc6f38aa2c81969954a7635deae') in 0.307569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001339 seconds.
+  path: Assets/NuitrackSDK/Pointer/Models/Materials/texturs_RGB.mat
+  artifactKey: Guid(534c8aec295c5a4449adcfa65e4c3690) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Pointer/Models/Materials/texturs_RGB.mat using Guid(534c8aec295c5a4449adcfa65e4c3690) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6241a17a0ed3b2cf0cfcf0aee5dc24ba') in 0.336431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003169 seconds.
+  path: Assets/NuitrackSDK/Pointer/Scripts/PointerPassing.cs
+  artifactKey: Guid(800478e11d5f82e48a3575e7f7837061) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Pointer/Scripts/PointerPassing.cs using Guid(800478e11d5f82e48a3575e7f7837061) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '30c6c508c4a81b79423b8bd66a3cac2a') in 0.278228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002967 seconds.
+  path: Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset
+  artifactKey: Guid(774f67d8ee4309548b47c3399aae8333) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset using Guid(774f67d8ee4309548b47c3399aae8333) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ee22920a794bb51a511fb1d373c7f1d1') in 0.366012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005267 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/Scripts/NuitrackManager.cs
+  artifactKey: Guid(80cd35d79163a34469e201b903e06d93) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/Scripts/NuitrackManager.cs using Guid(80cd35d79163a34469e201b903e06d93) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a371c485be4fe7bbbadb7efb85d726b3') in 0.264301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002153 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Prefabs/UnityChanAvatar.prefab
+  artifactKey: Guid(0a932158a94ee764ca763c3ce6a35c49) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Prefabs/UnityChanAvatar.prefab using Guid(0a932158a94ee764ca763c3ce6a35c49) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '818c1ff9107d33805030481b0362a5d0') in 2.643015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004494 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Prefabs/BoxAvatar.prefab
+  artifactKey: Guid(3c5bcb09e901b2e438e2cc6bc4c47319) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Prefabs/BoxAvatar.prefab using Guid(3c5bcb09e901b2e438e2cc6bc4c47319) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '1bd684855e34d995aa7fd8805405d53f') in 0.264956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001119 seconds.
+  path: Assets/NuitrackSDK/Avatar/UI Avatar/Scripts/SkeletonsUI.cs
+  artifactKey: Guid(5d64ca6152d85f44aa12029926b60a38) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/UI Avatar/Scripts/SkeletonsUI.cs using Guid(5d64ca6152d85f44aa12029926b60a38) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '48e4d38389dd84c2f69feba48344b57f') in 0.182139 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003890 seconds.
+  path: Assets/NuitrackSDK/Faces/Prefabs/Face Frame.prefab
+  artifactKey: Guid(26b4092169ad3d843b5b3847a2aafaf0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Faces/Prefabs/Face Frame.prefab using Guid(26b4092169ad3d843b5b3847a2aafaf0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '7b1ccf34a0191246069f2127b9f43c87') in 0.265222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003645 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_fuku_ds.shader
+  artifactKey: Guid(96d05de60c5f7474491f9f94568cf623) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_fuku_ds.shader using Guid(96d05de60c5f7474491f9f94568cf623) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c0f7c804e41572578221ff85adbb81b6') in 0.278769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.017441 seconds.
+  path: Assets/NuitrackSDK/Frame/Scripts/TextureUtils.cs
+  artifactKey: Guid(331c18aa275d1bb44b8efd222163f99f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Frame/Scripts/TextureUtils.cs using Guid(331c18aa275d1bb44b8efd222163f99f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '42e77481939c15d0531d3ed9d1c6b2a2') in 0.224660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007344 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Scripts/SkeletonAvatar.cs
+  artifactKey: Guid(788a86a9dac9f384dadcc06827ccef37) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Scripts/SkeletonAvatar.cs using Guid(788a86a9dac9f384dadcc06827ccef37) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '310fa5aa90a1e792495f67211ac6d1c1') in 0.257250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001955 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/CalibrationRotationScripts/CalibrationInfo.cs
+  artifactKey: Guid(6c969da05bae23445a33595e68c68551) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/CalibrationRotationScripts/CalibrationInfo.cs using Guid(6c969da05bae23445a33595e68c68551) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8987d9dac023a8a84ec91ee8f73d9f28') in 0.254233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004637 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Prefabs/Visualizations/GesturesVisualization.prefab
+  artifactKey: Guid(906a060e2232370449774d56dfce3b01) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Prefabs/Visualizations/GesturesVisualization.prefab using Guid(906a060e2232370449774d56dfce3b01) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '61e5906aa229108ecae5de06a42a979c') in 0.236855 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002920 seconds.
+  path: Assets/NuitrackSDK/NuitrackCalibrationRGB/Textures/Sensor.png
+  artifactKey: Guid(de1983a30d708f142b26126160b77c91) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackCalibrationRGB/Textures/Sensor.png using Guid(de1983a30d708f142b26126160b77c91) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd5abca2f3754f397e673cfcaa170dcc7') in 0.346649 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001511 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Scripts/DebugDepth.cs
+  artifactKey: Guid(77080c4647c7a7041bf8ff01b426b3f4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Scripts/DebugDepth.cs using Guid(77080c4647c7a7041bf8ff01b426b3f4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c729ca9ae7d1174aee62718e7d378181') in 0.291610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003135 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Materials/hair.mat
+  artifactKey: Guid(0686b679809f14929a8d7f427cbb4da3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Materials/hair.mat using Guid(0686b679809f14929a8d7f427cbb4da3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8a68b1b1e6e9c0468d0fd19290f0a940') in 0.221777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002225 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Prefabs/Visualizations/HandsTrackerVisualization.prefab
+  artifactKey: Guid(5c409c0c68b299d48b6ffc937314429a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Prefabs/Visualizations/HandsTrackerVisualization.prefab using Guid(5c409c0c68b299d48b6ffc937314429a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e28499635ed0924f1d44e555a2e7c702') in 0.285159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002387 seconds.
+  path: Assets/NuitrackSDK/SafetyGrid/Models/Materials/No Name.mat
+  artifactKey: Guid(a0896ffa8b166b1448e4b458ac3713f8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/SafetyGrid/Models/Materials/No Name.mat using Guid(a0896ffa8b166b1448e4b458ac3713f8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '36373efad59ce18ae621d1e43f62ac04') in 0.318369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002546 seconds.
+  path: Assets/NuitrackSDK/NuitrackCalibrationRGB/Scripts/BackTextureCreator.cs
+  artifactKey: Guid(87bdbbfeea23a4ecdb47ab1af8f71776) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackCalibrationRGB/Scripts/BackTextureCreator.cs using Guid(87bdbbfeea23a4ecdb47ab1af8f71776) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd8e95ca04f92fd774d378929b09eb702') in 0.330393 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002210 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Shaders/CustomMesh.shader
+  artifactKey: Guid(f755536e34151e448a56965883041740) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Shaders/CustomMesh.shader using Guid(f755536e34151e448a56965883041740) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '653051fb7f7cf804ea9d8eb1490fc0c7') in 0.330466 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002180 seconds.
+  path: Assets/NuitrackSDK/SensorEnvironment/SensorSpace/SensorSpace.cs
+  artifactKey: Guid(b5e8f23d6493e7c4fb325624d63ff6eb) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/SensorEnvironment/SensorSpace/SensorSpace.cs using Guid(b5e8f23d6493e7c4fb325624d63ff6eb) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '3eefa30e475e1d12c9e106accc3d3b47') in 0.300261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004701 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Prefabs/SubPrefabs/JointSphere.prefab
+  artifactKey: Guid(bbfbcd2cc26214149bfc0b0d58aea801) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Prefabs/SubPrefabs/JointSphere.prefab using Guid(bbfbcd2cc26214149bfc0b0d58aea801) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '43877602ded94a8439aa4a03c6828a05') in 0.215499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002486 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/NuitrackAssembly/nuitrackHelper.jar
+  artifactKey: Guid(c7243110a572ed64c92433a49c8aaae7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/NuitrackAssembly/nuitrackHelper.jar using Guid(c7243110a572ed64c92433a49c8aaae7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0e08e87487584c330e9656684afa8bdb') in 0.312628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004319 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Scripts/ModelJoint.cs
+  artifactKey: Guid(04d1a6a2853ea5243a9c27d80fe48a70) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Scripts/ModelJoint.cs using Guid(04d1a6a2853ea5243a9c27d80fe48a70) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'dc7f3ec4ffa66beabd6df61695d4a2ce') in 0.312465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002356 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_hair.shader
+  artifactKey: Guid(fe3954a9664afb042a2af588b53680b0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_hair.shader using Guid(fe3954a9664afb042a2af588b53680b0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '467ba7ab59c4526faed9bd3054eac008') in 0.689105 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.009447 seconds.
+  path: Assets/NuitrackSDK/Avatar/UI Avatar/Scripts/UIAvatar.cs
+  artifactKey: Guid(8f24b938d4e26644db71cfdc30b867e3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/UI Avatar/Scripts/UIAvatar.cs using Guid(8f24b938d4e26644db71cfdc30b867e3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c0fa82fdb155175f957007bfdebda5d8') in 0.222675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000794 seconds.
+  path: Assets/NuitrackSDK/NuitrackCalibrationRGB/Textures/BG2.png
+  artifactKey: Guid(e7b94f1473bfad946b1ca50f1f0743dc) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackCalibrationRGB/Textures/BG2.png using Guid(e7b94f1473bfad946b1ca50f1f0743dc) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '082f9eef731e82798a4ba60d4930ca41') in 0.367689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003677 seconds.
+  path: Assets/NuitrackSDK/Frame/Prefabs/Depth Frame.prefab
+  artifactKey: Guid(55ab0c357384d6b4c9bcc83c79fbfa29) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Frame/Prefabs/Depth Frame.prefab using Guid(55ab0c357384d6b4c9bcc83c79fbfa29) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e5f2850365c37735a2e83c173c3778a2') in 0.289145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003541 seconds.
+  path: Assets/NuitrackSDK/Frame/Scripts/ToTextureModules/FrameToTexture.cs
+  artifactKey: Guid(f2ac068345bbd4d4181dae430b5b2973) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Frame/Scripts/ToTextureModules/FrameToTexture.cs using Guid(f2ac068345bbd4d4181dae430b5b2973) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '85981fab459e9fd0ff027851d807095b') in 0.301281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002597 seconds.
+  path: Assets/NuitrackSDK/Pointer/Scripts/PointerVisuals.cs
+  artifactKey: Guid(2edabe8f0acc94e46b4469b3ccc43736) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Pointer/Scripts/PointerVisuals.cs using Guid(2edabe8f0acc94e46b4469b3ccc43736) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4ba44e827fdc7d50726528fd287f52e9') in 0.307840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004704 seconds.
+  path: Assets/vfx_nuitrack/test.cs
+  artifactKey: Guid(f227b5c45525f564882bca4461144231) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/vfx_nuitrack/test.cs using Guid(f227b5c45525f564882bca4461144231) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '748ad0896882d6694bf2d518d80b84dc') in 0.272266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000630 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Scripts/ModuleVisualisations/UserTrackerVisMesh.cs
+  artifactKey: Guid(cac9e86133008a64394d34985ca8f317) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Scripts/ModuleVisualisations/UserTrackerVisMesh.cs using Guid(cac9e86133008a64394d34985ca8f317) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8af20a3daf467417620c90797b2fae8b') in 0.624846 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000576 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_hada_blend.shader
+  artifactKey: Guid(7a95784c68f03494d8c7911e15fab82a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_hada_blend.shader using Guid(7a95784c68f03494d8c7911e15fab82a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c925750081d369235225fc9f91b9822d') in 0.499145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001943 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '839369b2038707db959470d4eafa4ca6') in 0.312181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003282 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/Right.mat
+  artifactKey: Guid(88157e674d7d0314db76940c73b69405) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/Right.mat using Guid(88157e674d7d0314db76940c73b69405) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '2493a525b4b7da41b2d6142c5c16c650') in 0.306748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004109 seconds.
+  path: Assets/NuitrackSDK/Frame/Shaders/Depth2Texture.compute
+  artifactKey: Guid(7a9f84790ca9b814798e8dc8a4ce6024) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Frame/Shaders/Depth2Texture.compute using Guid(7a9f84790ca9b814798e8dc8a4ce6024) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '2efcaa4515efee3cb89215a4aead6571') in 0.268883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002279 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Shaders/DepthSegmentationCustom.shader
+  artifactKey: Guid(82a781c8c85868f4eb215705128a3f4d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Shaders/DepthSegmentationCustom.shader using Guid(82a781c8c85868f4eb215705128a3f4d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c896e14618ac5f6451f1b57c175eb59b') in 0.280095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.052013 seconds.
+  path: Assets/NuitrackSDK/NuitrackCalibrationRGB/Exo2.0-Regular.otf
+  artifactKey: Guid(2eecc4a9ec4a6c849a4f13f204cfde3c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackCalibrationRGB/Exo2.0-Regular.otf using Guid(2eecc4a9ec4a6c849a4f13f204cfde3c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5fe9c10d33738909048bcb364ac48dd0') in 0.544879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001548 seconds.
+  path: Assets/NuitrackSDK/SafetyGrid/Prefabs/SafetyGrid.prefab
+  artifactKey: Guid(e9e9c4f7001e23f4db69be7088b92c06) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/SafetyGrid/Prefabs/SafetyGrid.prefab using Guid(e9e9c4f7001e23f4db69be7088b92c06) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'eae67f1d495c2cd2931e1362a7dd537e') in 0.274253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001790 seconds.
+  path: Assets/NuitrackSDK/Pointer/Models/Nuitrack_controller.FBX
+  artifactKey: Guid(3673044caf198874dba380a5e93ecbb3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Pointer/Models/Nuitrack_controller.FBX using Guid(3673044caf198874dba380a5e93ecbb3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'f3c2c85df88f1495b02d43781e6db946') in 0.632229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002306 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Textures/border.png
+  artifactKey: Guid(d6fbe16ee501e4747994699fe62008c1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Textures/border.png using Guid(d6fbe16ee501e4747994699fe62008c1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5623927e0f414fcec553b7dbadba9ccc') in 0.263963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002075 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Scripts/ModuleVisualisations/HandTrackerVisualization.cs
+  artifactKey: Guid(5928b86c27e840e459413af095863a6d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Scripts/ModuleVisualisations/HandTrackerVisualization.cs using Guid(5928b86c27e840e459413af095863a6d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'adc01a4ffeb664ee812a174e23526280') in 0.275022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002981 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Scripts/ExceptionsLogger.cs
+  artifactKey: Guid(7db305294f18be94d97262be92bf77d3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Scripts/ExceptionsLogger.cs using Guid(7db305294f18be94d97262be92bf77d3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e1c5b0af604fe74516e90f39c180f7f8') in 0.224102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003353 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Materials/eye_R1.mat
+  artifactKey: Guid(f37e71293707f43b9b83c1925ad01bd7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Materials/eye_R1.mat using Guid(f37e71293707f43b9b83c1925ad01bd7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '9a05a15c951d0e4730d052c2640c897b') in 0.301893 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002926 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_fuku.shader
+  artifactKey: Guid(00262b50562beb14cbab9b52bced4f9f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_fuku.shader using Guid(00262b50562beb14cbab9b52bced4f9f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '3bc5fbf484c9044c23c05d420ee6db54') in 0.272157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004541 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/body_01_SPEC.tga
+  artifactKey: Guid(7ae1142e9b3a72048960dd9561e0e0d9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/body_01_SPEC.tga using Guid(7ae1142e9b3a72048960dd9561e0e0d9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '3188145fc4eaab72e1b2be0c9c4b50e0') in 0.297975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.006898 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/eye_R1.mat
+  artifactKey: Guid(a87def7cf3654cc43add52e645fee2ce) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/eye_R1.mat using Guid(a87def7cf3654cc43add52e645fee2ce) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'eeb061a650045225e77742873ba8e560') in 0.304463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003506 seconds.
+  path: Assets/NuitrackSDK/NuitrackCalibrationRGB/CalibrationVisualization.prefab
+  artifactKey: Guid(f90e6ab765f2f8942a95cbfe3216dbb2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackCalibrationRGB/CalibrationVisualization.prefab using Guid(f90e6ab765f2f8942a95cbfe3216dbb2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c21a76cf7f788d82f4aac179c271aeb7') in 0.388713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002285 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Scenes/VRAvatarSettings.lighting
+  artifactKey: Guid(ebe1650c527a48346869733a54a5292f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Scenes/VRAvatarSettings.lighting using Guid(ebe1650c527a48346869733a54a5292f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5cb0afeebdc9b80a7f3f827e06b6830c') in 0.215676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001977 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/Shaders/ui_zigonre_font.shader
+  artifactKey: Guid(1a72baf79e439024e9d32b675724f3db) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/Shaders/ui_zigonre_font.shader using Guid(1a72baf79e439024e9d32b675724f3db) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd28551dbce118c0d487e07560d4c5100') in 0.259217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002341 seconds.
+  path: Assets/NuitrackSDK/SensorEnvironment/Editor/Helper.cs
+  artifactKey: Guid(b4cd6cb4a2ecb4747ac38547fb7396ed) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/SensorEnvironment/Editor/Helper.cs using Guid(b4cd6cb4a2ecb4747ac38547fb7396ed) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '7a57cdf7159ad20de13a9345a4a3218a') in 0.228639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002328 seconds.
+  path: Assets/NuitrackSDK/NuitrackCalibrationRGB/Materials/CubeGood.mat
+  artifactKey: Guid(cc686e312ae3d9e4fa245ff83f022af1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackCalibrationRGB/Materials/CubeGood.mat using Guid(cc686e312ae3d9e4fa245ff83f022af1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '876dd72efa1d54937de2f6cf32faa1b2') in 0.280559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002528 seconds.
+  path: Assets/NuitrackSDK/NuitrackCalibrationRGB/Textures/ButtonSpacebarSprite.png
+  artifactKey: Guid(3d8675433a508ec47b8f895201eacf20) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackCalibrationRGB/Textures/ButtonSpacebarSprite.png using Guid(3d8675433a508ec47b8f895201eacf20) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '47cdc8f34f807ad693a461b14a018687') in 0.430970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002389 seconds.
+  path: Assets/NuitrackSDK/Frame/Scripts/FrameViewer.cs
+  artifactKey: Guid(b8df1d03ff88eed47b3a3f64a904e4a0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Frame/Scripts/FrameViewer.cs using Guid(b8df1d03ff88eed47b3a3f64a904e4a0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '87556300d7df6da917e94d962922c19a') in 0.296076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004732 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Scenes/StickmanAvatarScene.unity
+  artifactKey: Guid(7621ffc83409ed84f932973177bcecfb) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Scenes/StickmanAvatarScene.unity using Guid(7621ffc83409ed84f932973177bcecfb) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'bce5ecf57ab1bfa0ec64a27657460d03') in 0.313455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001730 seconds.
+  path: Assets/NuitrackSDK/Frame/Shaders/Segment2Texture.compute
+  artifactKey: Guid(61b6a63a662cd1444b62410f77878c42) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Frame/Shaders/Segment2Texture.compute using Guid(61b6a63a662cd1444b62410f77878c42) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0ba2ea55767c0a00ce91d51ca28e80c4') in 0.241576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002811 seconds.
+  path: Assets/NuitrackSDK/Faces/Scripts/UIFacesManager.cs
+  artifactKey: Guid(8d6926b244aa681468747b98f6318827) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Faces/Scripts/UIFacesManager.cs using Guid(8d6926b244aa681468747b98f6318827) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e1878860db7cc1f494ecbee8887bdb78') in 0.298894 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001046 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Scripts/EmergencyExit.cs
+  artifactKey: Guid(5ccff87fd797dd5459dc0f4885a8334c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Scripts/EmergencyExit.cs using Guid(5ccff87fd797dd5459dc0f4885a8334c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '22e3b848df4d2fab1fa919b9df3ee338') in 0.412533 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002654 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Scripts/FovVisualSetter.cs
+  artifactKey: Guid(47425b879c936ef4b821f62b4d7303d4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Scripts/FovVisualSetter.cs using Guid(47425b879c936ef4b821f62b4d7303d4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b9d925ad34dd4c764494d7d9bdfcf18d') in 0.532352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002641 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/face.mat
+  artifactKey: Guid(4d83bd267b90e934e88637afcd02cb8a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/face.mat using Guid(4d83bd267b90e934e88637afcd02cb8a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '96eb0aa76605d0357197ae1b7ac12fb9') in 0.265802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003409 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Scripts/ModulesUI.cs
+  artifactKey: Guid(3a77a85788147324891cef046dad514b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Scripts/ModulesUI.cs using Guid(3a77a85788147324891cef046dad514b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c2f064090e05c7e67da31022360e6377') in 0.240546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003011 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/Scripts/Editor/TBBReplacer.cs
+  artifactKey: Guid(bea69c725f99c6c41b2c5a9222729329) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/Scripts/Editor/TBBReplacer.cs using Guid(bea69c725f99c6c41b2c5a9222729329) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a28ab52b3a36f66ab0b9d82e7be69ccd') in 0.277436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.013399 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Scenes/StickmanAvatarSceneSettings.lighting
+  artifactKey: Guid(793b1943aedb3fa41a203adbaf41fd43) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Scenes/StickmanAvatarSceneSettings.lighting using Guid(793b1943aedb3fa41a203adbaf41fd43) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5c198966ac89ab356ab2d8c9166841a9') in 0.341498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005010 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Scripts/CameraFullscreen.cs
+  artifactKey: Guid(559aaea5f0e83284f912e719306224d2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Scripts/CameraFullscreen.cs using Guid(559aaea5f0e83284f912e719306224d2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '177dbf2ce03b58ab7d7978766ea6c657') in 0.306609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005859 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Materials/mat_cheek.mat
+  artifactKey: Guid(4efe8cdcc7b554591bde513d7bde06d0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Materials/mat_cheek.mat using Guid(4efe8cdcc7b554591bde513d7bde06d0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ca9da68b37c46958ac4271057ffef39f') in 0.209200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002216 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/body_01.tga
+  artifactKey: Guid(f9c6074c5a78e71448f9efd3013cadda) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/body_01.tga using Guid(f9c6074c5a78e71448f9efd3013cadda) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'efdc9276628f7483bc088d7129938f67') in 0.252824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002716 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Materials/eye_L1.mat
+  artifactKey: Guid(a0186681a218f4550a84e6f0488e8b61) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Materials/eye_L1.mat using Guid(a0186681a218f4550a84e6f0488e8b61) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6c6dcc4d59d346c6927ff89d8ee66a24') in 0.258350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001378 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/Left.mat
+  artifactKey: Guid(00cf17fb11d4e76448c2096f7ee6aa4f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/Left.mat using Guid(00cf17fb11d4e76448c2096f7ee6aa4f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '43552e95739b2ea8ba1c1bd4de40e6b1') in 0.300358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002256 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/Mannequin/Materials/Ch36_1001_Diffuse.mat
+  artifactKey: Guid(9718fdc4dd12c794e97ea4755639ed4a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/Mannequin/Materials/Ch36_1001_Diffuse.mat using Guid(9718fdc4dd12c794e97ea4755639ed4a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '1a63da81ad975f8d004911eae8c5e27d') in 0.222654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002187 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/allModulesScene.unity
+  artifactKey: Guid(7ee3bed958804c2429b9de35821cff01) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/allModulesScene.unity using Guid(7ee3bed958804c2429b9de35821cff01) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c95e6b3dea889c02393f51e82125472c') in 0.334101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002739 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/FPSCounter/FPSCounter.prefab
+  artifactKey: Guid(549f71768accb9742812b8e5d628e89c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/FPSCounter/FPSCounter.prefab using Guid(549f71768accb9742812b8e5d628e89c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5181eea69db7533602a74e182bee56df') in 0.215679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002779 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/face_00.tga
+  artifactKey: Guid(3cf2e516b5353d5499c41818747b4155) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/face_00.tga using Guid(3cf2e516b5353d5499c41818747b4155) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'eac5ad246fcafe1cbdf38ff59d1e617f') in 0.287651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002194 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Prefabs/Visualizations/UserTrackerVisualizationPointCloud.prefab
+  artifactKey: Guid(c6e398acffac0014d984ca96f30564b6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Prefabs/Visualizations/UserTrackerVisualizationPointCloud.prefab using Guid(c6e398acffac0014d984ca96f30564b6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '1e3083c8918d6aba5fda450ba7482024') in 0.526859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002355 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Scripts/ModuleVisualisations/UserTrackerVisualization.cs
+  artifactKey: Guid(d6a6d3271a11bbd45b9f81fc5748dee7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Scripts/ModuleVisualisations/UserTrackerVisualization.cs using Guid(d6a6d3271a11bbd45b9f81fc5748dee7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4e63691622133c9ab9d0f33d61dbda62') in 0.250073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003648 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/body.mat
+  artifactKey: Guid(bb570020a8c3bad4bbf803af20e78937) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/body.mat using Guid(bb570020a8c3bad4bbf803af20e78937) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '3cff9837fc4427d5b1dd3b540a2e08a9') in 0.211415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004180 seconds.
+  path: Assets/NuitrackSDK/NuitrackCalibrationRGB/Materials/BackgroundGS.mat
+  artifactKey: Guid(6a1cb6520e51c3245a9e3180a51e6d1c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackCalibrationRGB/Materials/BackgroundGS.mat using Guid(6a1cb6520e51c3245a9e3180a51e6d1c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4d6ff56ef8f0aedb8baed79617666cad') in 0.267935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002674 seconds.
+  path: Assets/vfx_nuitrack/test1.cs
+  artifactKey: Guid(a7844174b0122684c9c78f1dc89ffb0f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/vfx_nuitrack/test1.cs using Guid(a7844174b0122684c9c78f1dc89ffb0f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '21565388d5dbb228bcfaacccb4a7bf44') in 0.259967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001491 seconds.
+  path: Assets/NuitrackSDK/Frame/Prefabs/Sensor Frame Canvas.prefab
+  artifactKey: Guid(59c1aadbb1a2f254b96c34fe3398a749) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Frame/Prefabs/Sensor Frame Canvas.prefab using Guid(59c1aadbb1a2f254b96c34fe3398a749) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '1709958e52d6821527b1c016b5e7655b') in 0.261125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001728 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/Materials/EnvironmentMaterial.mat
+  artifactKey: Guid(8a46b40dc0e867c4dbe288f0d76244c0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/Materials/EnvironmentMaterial.mat using Guid(8a46b40dc0e867c4dbe288f0d76244c0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'f444faaaf969fcf6f037f6698d0e3961') in 0.230254 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002407 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Scripts/TouchCameraControls.cs
+  artifactKey: Guid(8ef071a48b8a8ee4cb48b069818f2365) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Scripts/TouchCameraControls.cs using Guid(8ef071a48b8a8ee4cb48b069818f2365) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '9efa3f39e8f2237d86fbd99bb731473d') in 0.290348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.016346 seconds.
+  path: Assets/NuitrackSDK/Frame/Prefabs/RGB Frame.prefab
+  artifactKey: Guid(bb7bd846501e1814cb62491f9fd6d186) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Frame/Prefabs/RGB Frame.prefab using Guid(bb7bd846501e1814cb62491f9fd6d186) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'f1b9246df258390e3925c2802b82d610') in 0.212246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.051694 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/skin_01.tga
+  artifactKey: Guid(cc51a9a8397e3c5498dda60419ad3ec9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/skin_01.tga using Guid(cc51a9a8397e3c5498dda60419ad3ec9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a2d8f9962d236e7e3638f69e136d6cc6') in 5.579580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.709486 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_eye.shader
+  artifactKey: Guid(abaf2020b803b6847b5c081ed22c05c5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_eye.shader using Guid(abaf2020b803b6847b5c081ed22c05c5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0020d3c33a235d86df214ffa119909b4') in 0.499076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002110 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/Scripts/JsonInfo.cs
+  artifactKey: Guid(3b70fa461680d8548bc86538f0295366) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/Scripts/JsonInfo.cs using Guid(3b70fa461680d8548bc86538f0295366) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '64a5acef7264fcbfd16e218248841446') in 0.270491 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002374 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/Scripts/HandPressure.cs
+  artifactKey: Guid(ef6b497e4e4a6124ea84adcfa3252d5b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/Scripts/HandPressure.cs using Guid(ef6b497e4e4a6124ea84adcfa3252d5b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b5b54f321356c572d6f528234be4e76e') in 0.296448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002265 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/Scripts/Editor/NuitrackMenu.cs
+  artifactKey: Guid(a0cc8cc3c9513104a83500630d970f02) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/Scripts/Editor/NuitrackMenu.cs using Guid(a0cc8cc3c9513104a83500630d970f02) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c94574a720e8580a3c7986d7fa15af85') in 0.398732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001102 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Materials/DebugDepthMaterial.mat
+  artifactKey: Guid(adb5c780fa2ea4949b88b28a6f382a96) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Materials/DebugDepthMaterial.mat using Guid(adb5c780fa2ea4949b88b28a6f382a96) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0348247c1e88f8a1a18bbb14d4b5dff2') in 0.280513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003050 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/Scripts/CurrentUserTracker.cs
+  artifactKey: Guid(0553d2c8dca969e4b9687ceaf94767d1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/Scripts/CurrentUserTracker.cs using Guid(0553d2c8dca969e4b9687ceaf94767d1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '45d91f937388064bb9538b63dcaa8768') in 0.258686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000816 seconds.
+  path: Assets/NuitrackSDK/Pointer/Models/Nuitrack_controller.fbm/texturs_RGB.jpg
+  artifactKey: Guid(0cf0ec45b8652dc4aba728f469fb94d3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Pointer/Models/Nuitrack_controller.fbm/texturs_RGB.jpg using Guid(0cf0ec45b8652dc4aba728f469fb94d3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c82c4e3f9a555a536963e109d34d14ee') in 0.247162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002329 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/unitychan.fbx
+  artifactKey: Guid(8f0565f23a2b58541a475bd3c1393052) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/unitychan.fbx using Guid(8f0565f23a2b58541a475bd3c1393052) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e375acc90fe11f60d402749fb0a77cc2') in 1.342553 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000800 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/CalibrationRotationScripts/CameraRecenter.cs
+  artifactKey: Guid(7e9b416a5f9771242895d83e477ebd0b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/CalibrationRotationScripts/CameraRecenter.cs using Guid(7e9b416a5f9771242895d83e477ebd0b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '829449a65791e8186e982f2bcd84205d') in 0.365607 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002211 seconds.
+  path: Assets/NuitrackSDK/NuitrackCalibrationRGB/Textures/Sensor_controller_calibrate.png
+  artifactKey: Guid(fead29033dd32e44baf065b0d09014f5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackCalibrationRGB/Textures/Sensor_controller_calibrate.png using Guid(fead29033dd32e44baf065b0d09014f5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'fef2e874aa41b76bba76ec084e37f869') in 0.472643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004721 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/Shaders/GvrUnlitTransparentOverlayColor.shader
+  artifactKey: Guid(4116add7840413549b2723fef4517767) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/Shaders/GvrUnlitTransparentOverlayColor.shader using Guid(4116add7840413549b2723fef4517767) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd76b4343af7c07c9f69744e3d988fb42') in 0.262617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002105 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/Skeleton/Materials/SkeletonJoints.mat
+  artifactKey: Guid(d19e3774da19afe4191b39d7df7788a9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/Skeleton/Materials/SkeletonJoints.mat using Guid(d19e3774da19afe4191b39d7df7788a9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '3a94e5c28d4099f23c8a35f11a6380f6') in 0.253522 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003516 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Materials/DebugSegmentationMaterial.mat
+  artifactKey: Guid(2e76fa5aac15f5b408df506428355e37) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Materials/DebugSegmentationMaterial.mat using Guid(2e76fa5aac15f5b408df506428355e37) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '1f15f95de0450458f8b78d46a50f174d') in 0.288584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002535 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/eye_L1.mat
+  artifactKey: Guid(4987862c1c195e74c86994ba4bcbd812) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/eye_L1.mat using Guid(4987862c1c195e74c86994ba4bcbd812) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b66ae6ef0332e7c6a3cbf2de867abcce') in 0.216732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002099 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/Materials/UI_Z_Ignore_image.mat
+  artifactKey: Guid(18098a4ddd6cdcd4c81be4b46ea68dec) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/Materials/UI_Z_Ignore_image.mat using Guid(18098a4ddd6cdcd4c81be4b46ea68dec) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b017383e6d9be6c36919e5b7fceeb6ee') in 0.216988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000775 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Prefabs/Visualizations/SkeletonsVisualization.prefab
+  artifactKey: Guid(0e2c45ed1e21ca94e8e712647ad5dd1d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Prefabs/Visualizations/SkeletonsVisualization.prefab using Guid(0e2c45ed1e21ca94e8e712647ad5dd1d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd301fbd55e464d7b2c130548ce75ae65') in 0.271758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004641 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Materials/UserTrackerMaterial.mat
+  artifactKey: Guid(56dc1b3f78aa6da409d1d6e0ccb24e93) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Materials/UserTrackerMaterial.mat using Guid(56dc1b3f78aa6da409d1d6e0ccb24e93) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0d0f2d42a2aa79442088c4c3e91c0389') in 0.325499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002882 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/Scripts/Editor/ProgramStarter.cs
+  artifactKey: Guid(ebe2eec4796fcce4f8878febc0e0b97f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/Scripts/Editor/ProgramStarter.cs using Guid(ebe2eec4796fcce4f8878febc0e0b97f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd7305415d20bbb8bf2f42bb57a6b9cbb') in 0.324674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000790 seconds.
+  path: Assets/HDRPDefaultResources/FoliageDiffusionProfile.asset
+  artifactKey: Guid(7d2fc311392b6d94da6f4d4c660b1d5f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/HDRPDefaultResources/FoliageDiffusionProfile.asset using Guid(7d2fc311392b6d94da6f4d4c660b1d5f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '36116852ff5fb869ccae27ff87ee3b74') in 0.260758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002092 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/CharaSkin.cg
+  artifactKey: Guid(fe01eae1ec1d1c24b99530833c8c8241) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/CharaSkin.cg using Guid(fe01eae1ec1d1c24b99530833c8c8241) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'cebe5e6af0fba554a1a578bd1e7783ad') in 0.268655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004644 seconds.
+  path: Assets/NuitrackSDK/Avatar/UI Avatar/Prefabs/SubPrefabs/JointUI.prefab
+  artifactKey: Guid(45cb33f510473c845afa08b99eb4dee7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/UI Avatar/Prefabs/SubPrefabs/JointUI.prefab using Guid(45cb33f510473c845afa08b99eb4dee7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '291143d16b44596ba25b8935dd346ebb') in 0.285952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003841 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Prefabs/Visualizations/UserTrackerVisualization.prefab
+  artifactKey: Guid(be4ae168ac6118b4f88502a94f801fb5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Prefabs/Visualizations/UserTrackerVisualization.prefab using Guid(be4ae168ac6118b4f88502a94f801fb5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8e227e2d7a3a3707740e4bccaaaf0b12') in 0.355668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002273 seconds.
+  path: Assets/NuitrackSDK/SafetyGrid/Models/Grid_3cell.FBX
+  artifactKey: Guid(dba5a6c347e63f1489bf967eff5408c2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/SafetyGrid/Models/Grid_3cell.FBX using Guid(dba5a6c347e63f1489bf967eff5408c2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '45af1f72e2b7a306c028016ea4b0cb9e') in 0.473188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.006767 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/eye_iris_L_00.tga
+  artifactKey: Guid(66f06726158899242adaf95180360b7b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/eye_iris_L_00.tga using Guid(66f06726158899242adaf95180360b7b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '72fb94c5dd4e84f80464462f0ce8c1b4') in 0.274485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003066 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/eye_iris_R_00.tga
+  artifactKey: Guid(7521661d2d6cebb479dea03e7336e5de) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/eye_iris_R_00.tga using Guid(7521661d2d6cebb479dea03e7336e5de) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd4910e707df8b1772bdae6792c0e72ae') in 0.297640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002894 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/hair_01.tga
+  artifactKey: Guid(cbb65ec17f92eb44fb0dde6381b6a415) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/hair_01.tga using Guid(cbb65ec17f92eb44fb0dde6381b6a415) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '72c94e51687cc6d840ff1effce6f7226') in 0.276865 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003071 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Prefabs/SubPrefabs/Connection.prefab
+  artifactKey: Guid(ca4c3e410f1dcd440bf2bc4948afde63) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Prefabs/SubPrefabs/Connection.prefab using Guid(ca4c3e410f1dcd440bf2bc4948afde63) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '29857e191d849a5b86bbae9164e06b99') in 0.317422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000608 seconds.
+  path: Assets/NuitrackSDK/Frame/Prefabs/Segment Frame.prefab
+  artifactKey: Guid(72fec835c9034514a9952eb6dfb6864b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Frame/Prefabs/Segment Frame.prefab using Guid(72fec835c9034514a9952eb6dfb6864b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '33fc0071744f875258800421a3ea8f6a') in 0.222388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002606 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/Mannequin/Ch36_nonPBR.fbx
+  artifactKey: Guid(d76397f288bff764d8016575a24accfd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/Mannequin/Ch36_nonPBR.fbx using Guid(d76397f288bff764d8016575a24accfd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6d89d5ca40533fa7906e6dc9074d17b3') in 0.558636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004347 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/hair_01_SPEC.tga
+  artifactKey: Guid(c4271b2b1e8bfa949aa9230abaa7709e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/hair_01_SPEC.tga using Guid(c4271b2b1e8bfa949aa9230abaa7709e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6e99d53542ce14579eab02ee75804212') in 0.310544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002590 seconds.
+  path: Assets/NuitrackSDK/NuitrackCalibrationRGB/Materials/UserColorMaterial.mat
+  artifactKey: Guid(c9b429c4f034bcd438d9dcddf9cc7d97) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackCalibrationRGB/Materials/UserColorMaterial.mat using Guid(c9b429c4f034bcd438d9dcddf9cc7d97) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '9e1aa64b62ed901e15cdec403b8b1dcc') in 0.231958 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002313 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/skin1.mat
+  artifactKey: Guid(ca131910d5c9a634dbdd38e77111033f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/skin1.mat using Guid(ca131910d5c9a634dbdd38e77111033f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a32fa07c5669f7d0f0cd4de32394bc58') in 0.320350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002057 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Scripts/NuitrackModules.cs
+  artifactKey: Guid(b13c17743c066f540bec364865ee57c9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Scripts/NuitrackModules.cs using Guid(b13c17743c066f540bec364865ee57c9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '73c0471ae927939b6d2cae21e211a6dc') in 0.234572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002443 seconds.
+  path: Assets/NuitrackSDK/Pointer/Models/Textures/texturs_RGB.png
+  artifactKey: Guid(9488920b603751c45ba64232b2c51691) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Pointer/Models/Textures/texturs_RGB.png using Guid(9488920b603751c45ba64232b2c51691) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '9b68c1f6153bd425089bfc67dc7c1ab9') in 0.273171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003473 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_akarami_blend.shader
+  artifactKey: Guid(0298b868476735f41857e9ba8f0d4cd1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_akarami_blend.shader using Guid(0298b868476735f41857e9ba8f0d4cd1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '19de21735027dc49da6e446ee6294f72') in 0.338875 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002330 seconds.
+  path: Assets/NuitrackSDK/Faces/Prefabs/Face Canvas.prefab
+  artifactKey: Guid(c9202d058a5548442b68e6e1413934fe) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Faces/Prefabs/Face Canvas.prefab using Guid(c9202d058a5548442b68e6e1413934fe) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'fed72f6a30f03954fe9951fc9cf938fd') in 0.279504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000917 seconds.
+  path: Assets/NuitrackSDK/Pointer/Scripts/PointerRotation.cs
+  artifactKey: Guid(6277f486c08a79c4fae399fc1e3e42c6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Pointer/Scripts/PointerRotation.cs using Guid(6277f486c08a79c4fae399fc1e3e42c6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ede7477af27f205d27c373ec25c15468') in 0.288712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001303 seconds.
+  path: Assets/NuitrackSDK/SafetyGrid/Scripts/SensorPointReplacer.cs
+  artifactKey: Guid(9fdf43a1c04b3464e936ac2549dd27e8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/SafetyGrid/Scripts/SensorPointReplacer.cs using Guid(9fdf43a1c04b3464e936ac2549dd27e8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '98a4a044963475db492065873af3d6cc') in 0.291501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003143 seconds.
+  path: Assets/NuitrackSDK/Faces/Scripts/UIFaceInfo.cs
+  artifactKey: Guid(0800066561a82e64ca545ba4a47f80f1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Faces/Scripts/UIFaceInfo.cs using Guid(0800066561a82e64ca545ba4a47f80f1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '28dc5e834ce42b5cf728d148fb02ad9e') in 0.275777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002753 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Scripts/Avatar.cs
+  artifactKey: Guid(2b603a97007ace546a1d79055d779a70) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Scripts/Avatar.cs using Guid(2b603a97007ace546a1d79055d779a70) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '036d5bd9e2bf5f569e02f87b1c7db9f1') in 0.284359 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004496 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Prefabs/SubPrefabs/Joint.prefab
+  artifactKey: Guid(643c78edbe2958742815743896c590a6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Prefabs/SubPrefabs/Joint.prefab using Guid(643c78edbe2958742815743896c590a6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '2ae756c451f45aef204a3e918e2a9ed7') in 0.282420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002434 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/eyeline_00.tga
+  artifactKey: Guid(e315db926a0705845b12da3cc80ea306) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/UnityChanShader/Texture/eyeline_00.tga using Guid(e315db926a0705845b12da3cc80ea306) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'edb57e0b93255403d3e2504346974df1') in 0.329135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003002 seconds.
+  path: Assets/NuitrackSDK/Frame/Scripts/ToTextureModules/DepthToTexture.cs
+  artifactKey: Guid(b1ab45434ad8f504c908d506e4e0db15) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Frame/Scripts/ToTextureModules/DepthToTexture.cs using Guid(b1ab45434ad8f504c908d506e4e0db15) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd4ad4ead2d244c4e9d12982ad75a757a') in 0.406960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000725 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Materials/InfoBackground.mat
+  artifactKey: Guid(8fd5b218d34cebd429bd002f62c1abe0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Materials/InfoBackground.mat using Guid(8fd5b218d34cebd429bd002f62c1abe0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'f07c52aaa90a295ae3820805a04d4208') in 0.175679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000856 seconds.
+  path: Assets/NuitrackSDK/Pointer/Scripts/VVRInput.cs
+  artifactKey: Guid(24592ebd44aef53439349ec9f5eeeba3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Pointer/Scripts/VVRInput.cs using Guid(24592ebd44aef53439349ec9f5eeeba3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b27138e2ca9bb45cbfda883fa731ba58') in 0.305802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002390 seconds.
+  path: Assets/NuitrackSDK/SafetyGrid/Models/Grid_1cell.FBX
+  artifactKey: Guid(1b199c06f8eb9dd49ad3ef3f601bc78c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/SafetyGrid/Models/Grid_1cell.FBX using Guid(1b199c06f8eb9dd49ad3ef3f601bc78c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b3596a427c628c444041e69efd886b8a') in 0.317654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001973 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/BoxUnityChan.fbx
+  artifactKey: Guid(d6dad0fb52ba12f458cc7ffb66882391) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/BoxUnityChan.fbx using Guid(d6dad0fb52ba12f458cc7ffb66882391) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '13b89abc4af6885ca06dc2d6a77b51e0') in 1.069304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002661 seconds.
+  path: Assets/vfx_nuitrack/Cubes.vfx
+  artifactKey: Guid(290f003cb6e30774bbca1a7c0a9fd418) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/vfx_nuitrack/Cubes.vfx using Guid(290f003cb6e30774bbca1a7c0a9fd418) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '3857c3fcac827b440656fc2a7087f3f2') in 11.951884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002746 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Scripts/IssuesProcessor.cs
+  artifactKey: Guid(77148158af57878498d926d1d6e71136) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Scripts/IssuesProcessor.cs using Guid(77148158af57878498d926d1d6e71136) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '1b240ec79bcfc44d3ac4fc47f4e850e9') in 0.207251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000471 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/eyebase.mat
+  artifactKey: Guid(9bec51fc47eda6047ba5cc01addbf46f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/UnityChan/Models/Materials/eyebase.mat using Guid(9bec51fc47eda6047ba5cc01addbf46f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4d6fe387e0e88f666afd56f3db8e9891') in 0.382384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.009199 seconds.
+  path: Assets/NuitrackSDK/NuitrackCalibrationRGB/Scripts/SensorDisconnectChecker.cs
+  artifactKey: Guid(d04ad53924b59114f9be309beb0986e0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackCalibrationRGB/Scripts/SensorDisconnectChecker.cs using Guid(d04ad53924b59114f9be309beb0986e0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0dc750282c82175d98136b05901d0842') in 0.226247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001963 seconds.
+  path: Assets/NuitrackSDK/Nuitrack/Prefabs/NuitrackScripts.prefab
+  artifactKey: Guid(e999ace05c586574fa1b964016f28531) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Nuitrack/Prefabs/NuitrackScripts.prefab using Guid(e999ace05c586574fa1b964016f28531) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '63753c7bbdf15244f9cc7ca7879bd8d8') in 0.342165 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002095 seconds.
+  path: Assets/NuitrackSDK/NuitrackCalibrationRGB/Textures/RGB_window2_2 (1).png
+  artifactKey: Guid(686f8166ae983904ca4b152b32ac3b3d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackCalibrationRGB/Textures/RGB_window2_2 (1).png using Guid(686f8166ae983904ca4b152b32ac3b3d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '532141d95f3fd8407c61b680cf5f39b6') in 0.593427 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000763 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Prefabs/SkeletonAvatar.prefab
+  artifactKey: Guid(72501dec5008c4f4d82bdfd3f9e86bb9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Prefabs/SkeletonAvatar.prefab using Guid(72501dec5008c4f4d82bdfd3f9e86bb9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c40a2a4b83392f7ad4053cbb506c78e4') in 0.333281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002216 seconds.
+  path: Assets/NuitrackSDK/NuitrackCalibrationRGB/Materials/UIImageZIgnore.mat
+  artifactKey: Guid(7b77fa03aa44b8940a760454b1248398) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackCalibrationRGB/Materials/UIImageZIgnore.mat using Guid(7b77fa03aa44b8940a760454b1248398) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '72e05892a96760ba5e5bd47e55c97c6f') in 0.258112 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002869 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/allModulesSceneSettings.lighting
+  artifactKey: Guid(c78b3e0d49c105044b844ed74b62ae68) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/allModulesSceneSettings.lighting using Guid(c78b3e0d49c105044b844ed74b62ae68) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '959dc6239c3f912e1ee310f4e5743b08') in 0.312416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004545 seconds.
+  path: Assets/NuitrackSDK/NuitrackCalibrationRGB/Textures/Materials/RGB_window.mat
+  artifactKey: Guid(2a9234a68196147479e0bd3161a23549) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackCalibrationRGB/Textures/Materials/RGB_window.mat using Guid(2a9234a68196147479e0bd3161a23549) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5aa8d753862553e132a5395a32ac17b1') in 0.292014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001226 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Scripts/ModuleVisualisations/SkeletonVisualization.cs
+  artifactKey: Guid(2a6b3b5a6751037419de7f95d61b09b3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Scripts/ModuleVisualisations/SkeletonVisualization.cs using Guid(2a6b3b5a6751037419de7f95d61b09b3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '2521a636a2f6a4088fcbd0cef54e1173') in 0.433780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002765 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Materials/IssuesBorder.mat
+  artifactKey: Guid(80a7efb517daac54babbb0311ad838a5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Materials/IssuesBorder.mat using Guid(80a7efb517daac54babbb0311ad838a5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '23f09aab20e5f3825e506d8dcf6e5155') in 0.271241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002225 seconds.
+  path: Assets/NuitrackSDK/Avatar/3D Avatar/Models/Mannequin/Ch36_nonPBR.fbm/Ch36_1001_Diffuse.png
+  artifactKey: Guid(169adc1674782784e87d0fc1a7c4909e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/Avatar/3D Avatar/Models/Mannequin/Ch36_nonPBR.fbm/Ch36_1001_Diffuse.png using Guid(169adc1674782784e87d0fc1a7c4909e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5f0619831f98d904e1e23a7d40aebbe7') in 0.247102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Prefabs/ExitButton.prefab
+  artifactKey: Guid(c53491af89f4bfd41b9fe00942970024) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Prefabs/ExitButton.prefab using Guid(c53491af89f4bfd41b9fe00942970024) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'f8481d4f9e3b0b0c807b90603e95a440') in 0.176473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005284 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Prefabs/Visualizations/UserTrackerVisMesh.prefab
+  artifactKey: Guid(c01e17f2fd2c2e741bccebd1a6a86466) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Prefabs/Visualizations/UserTrackerVisMesh.prefab using Guid(c01e17f2fd2c2e741bccebd1a6a86466) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '43e581e9a85ed812bfc88ed43aac3aeb') in 0.232187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002401 seconds.
+  path: Assets/NuitrackSDK/NuitrackDemos/Prefabs/CursorHand.prefab
+  artifactKey: Guid(2979f6657289c5e41bddc703312c0ef4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NuitrackSDK/NuitrackDemos/Prefabs/CursorHand.prefab using Guid(2979f6657289c5e41bddc703312c0ef4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '7813a603440e9feea862fff8e09bde7b') in 0.257138 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3311.163229 seconds.
+  path: Assets/vfx_nuitrack/Cubes.vfx
+  artifactKey: Guid(290f003cb6e30774bbca1a7c0a9fd418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/vfx_nuitrack/Cubes.vfx using Guid(290f003cb6e30774bbca1a7c0a9fd418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5f53b469a114b626c8ebe1ebbc20618') in 0.135206 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 422.693623 seconds.
+  path: Assets/vfx_nuitrack/PointCloudRenderer.cs
+  artifactKey: Guid(7cbb8bb7f3aece046bfe85301717ba48) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/vfx_nuitrack/PointCloudRenderer.cs using Guid(7cbb8bb7f3aece046bfe85301717ba48) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ebc93dafd224d80c77bde5a719bc3e90') in 0.091007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.452345 seconds.
+  path: Assets/vfx_nuitrack/VFXManager.cs
+  artifactKey: Guid(ed7de8e60e42ad049b79459045c4c312) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/vfx_nuitrack/VFXManager.cs using Guid(ed7de8e60e42ad049b79459045c4c312) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0484e68a26b2d0e20dfb5f09952ce6a2') in 0.038182 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 42.350787 seconds.
+  path: Assets/vfx_nuitrack/PointCloudRenderer.cs
+  artifactKey: Guid(7cbb8bb7f3aece046bfe85301717ba48) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/vfx_nuitrack/PointCloudRenderer.cs using Guid(7cbb8bb7f3aece046bfe85301717ba48) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b858947cb62e0ab836de5670ed61ff3d') in 0.029664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.589463 seconds.
+  path: Assets/vfx_nuitrack/PointCloudRenderer.cs
+  artifactKey: Guid(7cbb8bb7f3aece046bfe85301717ba48) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/vfx_nuitrack/PointCloudRenderer.cs using Guid(7cbb8bb7f3aece046bfe85301717ba48) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '9594002390cefd46abe74b93e1e138fc') in 0.024034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.397810 seconds.
+  path: Assets/vfx_nuitrack/PointCloudRenderer.cs
+  artifactKey: Guid(7cbb8bb7f3aece046bfe85301717ba48) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/vfx_nuitrack/PointCloudRenderer.cs using Guid(7cbb8bb7f3aece046bfe85301717ba48) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '1868d5c5d1d87b609fe01bfbd6d07e4d') in 0.020848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.033266 seconds.
+  path: Assets/vfx_nuitrack/PointCloudRenderer.cs
+  artifactKey: Guid(7cbb8bb7f3aece046bfe85301717ba48) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/vfx_nuitrack/PointCloudRenderer.cs using Guid(7cbb8bb7f3aece046bfe85301717ba48) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '2c33284497d7c678193abf88c8f30068') in 0.033188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.152804 seconds.
+  path: Assets/vfx_nuitrack/VFXManager.cs
+  artifactKey: Guid(ed7de8e60e42ad049b79459045c4c312) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/vfx_nuitrack/VFXManager.cs using Guid(ed7de8e60e42ad049b79459045c4c312) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '226268563911c4ea921d7bae72974178') in 0.021015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.869036 seconds.
+  path: Assets/vfx_nuitrack/VFXManager.cs
+  artifactKey: Guid(ed7de8e60e42ad049b79459045c4c312) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/vfx_nuitrack/VFXManager.cs using Guid(ed7de8e60e42ad049b79459045c4c312) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '9e535d9022b79ce1b91aa30ae699ae85') in 0.058593 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.161079 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Unity Projects\VFX_Nuitrack\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity Projects\VFX_Nuitrack\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Il2cpp Dll not found: Assets/NuitrackSDK/Nuitrack/NuitrackAssembly/IL2CPP/nuitrack.net.dll
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+SwitchDll:Check () (at Assets/NuitrackSDK/Nuitrack/Scripts/Editor/SwitchDll.cs:34)
+SwitchDll:.cctor () (at Assets/NuitrackSDK/Nuitrack/Scripts/Editor/SwitchDll.cs:17)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/NuitrackSDK/Nuitrack/Scripts/Editor/SwitchDll.cs Line: 34)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  6.155 seconds
+Domain Reload Profiling:
+	ReloadAssembly (6165ms)
+		BeginReloadAssembly (2071ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (226ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1391ms)
+		EndReloadAssembly (3959ms)
+			LoadAssemblies (1427ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (920ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (226ms)
+			SetupLoadedEditorAssemblies (837ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (172ms)
+				ProcessInitializeOnLoadAttributes (556ms)
+				ProcessInitializeOnLoadMethodAttributes (80ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (54ms)
+Platform modules already initialized, skipping
+D3D shader create error for vertex shader [0x80070057]
+D3D shader create error for vertex shader [0x80070057]
+D3D shader create error for vertex shader [0x80070057]
+D3D shader create error for vertex shader [0x80070057]
+D3D shader create error for domain shader [0x80070057]
+D3D shader create error for domain shader [0x80070057]
+Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4984 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 207.1 MB.
+System memory in use after: 207.5 MB.
+
+Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 5739.
+Total: 23.526300 ms (FindLiveObjects: 1.925700 ms CreateObjectMapping: 0.711300 ms MarkObjects: 19.184700 ms  DeleteObjects: 1.702000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
