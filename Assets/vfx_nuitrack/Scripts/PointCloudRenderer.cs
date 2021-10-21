@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.VFX;
 
@@ -15,7 +16,10 @@ public class PointCloudRenderer : MonoBehaviour
     [SerializeField] private int depthThreshold = 4000;
     [SerializeField] private float threshold;
     [SerializeField] private float maxLifetime;
-    
+
+    private int texWidth;
+    private int texHeight;
+    private FrameData fd;
 
     Texture2D texColor;
     Texture2D texPositions;
@@ -27,25 +31,19 @@ public class PointCloudRenderer : MonoBehaviour
     uint particleCount = 0;
     private void Start()
     {
-        //vfx = GetComponent<VisualEffect>();
-        
-    }
+        texColor = new Texture2D(width, height, TextureFormat.ARGB32, false);
+        texPositions = new Texture2D(width, height, TextureFormat.RGBAFloat, false);
+
+        texWidth = texColor.width;
+        texHeight = texColor.height;
+
+        fd = GetComponent<FrameData>();
+}
 
     private void Update()
     {
         //SetParticles(GetComponent<FrameData>().Positions, GetComponent<FrameData>().Colors);
-        SetParticles(GetComponent<FrameData>().Positions);
-
-        //if (toUpdate)
-        //{
-        //    toUpdate = false;
-
-        //    vfx.Reinit();
-        //    vfx.SetUInt(Shader.PropertyToID("ParticleCount"), particleCount);
-        //    vfx.SetTexture(Shader.PropertyToID("TexColor"), texColor);
-        //    vfx.SetTexture(Shader.PropertyToID("TexPosScale"), texPositions);
-        //    vfx.SetUInt(Shader.PropertyToID("Resolution"), resolution);
-        //}
+        SetParticles(fd.Positions);
     }
     private float GetLifetime(float z)
     {
@@ -54,10 +52,6 @@ public class PointCloudRenderer : MonoBehaviour
     //public void SetParticles(List<Vector3> positions,Color[] colors)
     public void SetParticles(List<Vector3> positions)
     {
-        texColor = new Texture2D(width,height, TextureFormat.ARGB32, false);
-        texPositions = new Texture2D(width, height, TextureFormat.RGBAFloat, false);
-        int texWidth = texColor.width;
-        int texHeight = texColor.height;
         
         int index = 0;
 
@@ -65,9 +59,9 @@ public class PointCloudRenderer : MonoBehaviour
         {
             for (int x = 0; x < texWidth; x++)
             {
-                
+
                 //texColor.SetPixel(x, y, colors[index]);
-                var data = new Color(positions[index].x/ scale, positions[index].y/ scale, positions[index].z/ scale, GetLifetime(positions[index].z));
+                var data = new Color(positions[index].x / scale, positions[index].y / scale, positions[index].z / scale, GetLifetime(positions[index].z));
                 //texColor.SetPixel(x, y, colors[index]);
                 texPositions.SetPixel(x, y, data);
                 index++;
@@ -76,10 +70,10 @@ public class PointCloudRenderer : MonoBehaviour
 
         texColor.Apply();
         texPositions.Apply();
-        //particleCount = (uint)positions.Length;
-        toUpdate = true;
+
         RenderTexture.active = positionMap;
         Graphics.Blit(texPositions, positionMap);
+
         RenderTexture.active = colorMap;
         Graphics.Blit(texColor, colorMap);
     }

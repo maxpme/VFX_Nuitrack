@@ -6,6 +6,21 @@ using Vector3 = UnityEngine.Vector3;
 
 public class FrameData : MonoBehaviour
 {
+    [SerializeField] private int scale=1000;
+    [SerializeField] private int width = 640;
+    [SerializeField] private int height = 480;
+    [SerializeField] private RenderTexture positionMap;
+    [SerializeField] private int threshold = 4;
+
+    private int texWidth;
+    private int texHeight;
+    private Color data;
+
+    Texture2D texPositions;
+
+
+
+
     private List<Vector3> _positions = new List<Vector3>();
     private Color[] _colors = new Color[640*480];
 
@@ -15,11 +30,16 @@ public class FrameData : MonoBehaviour
 
     private void Start()
     {
-        NuitrackManager.onDepthUpdate += getDepthFrame;
-        //NuitrackManager.onColorUpdate += getColorFrame;
-    }
+        NuitrackManager.onDepthUpdate += GetDepthFrame;
+        //NuitrackManager.onColorUpdate += GetColorFrame;
 
-    private void getColorFrame(ColorFrame cf)
+        texPositions = new Texture2D(width, height, TextureFormat.RGBAFloat, false);
+
+        texWidth = texPositions.width;
+        texHeight = texPositions.height;
+    }
+    
+    private void GetColorFrame(ColorFrame cf)
     {
         Colors = null;
         Color currentColor = new Color();
@@ -36,7 +56,7 @@ public class FrameData : MonoBehaviour
             }
         }
     }
-    private void getDepthFrame(DepthFrame df)
+    private void GetDepthFrame(DepthFrame df)
     {
         Positions.Clear();
         Vector3 _positionCoords = new Vector3();
@@ -45,13 +65,29 @@ public class FrameData : MonoBehaviour
         int height = df.Rows;
         int width = df.Cols;
 
-        for(int y = 0; y < height; y++)
+        for (int y = 0; y < height; y++)
         {
-            for(int x = 0; x < width; x++)
+            for (int x = 0; x < width; x++)
             {
-                _positionCoords = NuitrackManager.DepthSensor.ConvertProjToRealCoords(x, y, df[y,x]).ToVector3();
-                Positions.Add(_positionCoords);
+
+                if (df[y, x] < 0.1 || df[y, x] > threshold * scale)
+                {
+                    data = new Color(0, 0, 0, -2);
+                }
+                else
+                {
+                    _positionCoords = NuitrackManager.DepthSensor.ConvertProjToRealCoords(x, y, df[y, x]).ToVector3();
+                    //Positions.Add(_positionCoords);
+                    data = new Color(_positionCoords.x / scale, _positionCoords.y / scale, _positionCoords.z / scale, 1.0f);
+                }
+                //texColor.SetPixel(x, y, colors[index]);
+                texPositions.SetPixel(x, y, data);
             }
         }
+
+        texPositions.Apply();
+
+        RenderTexture.active = positionMap;
+        Graphics.Blit(texPositions, positionMap);
     }
 }

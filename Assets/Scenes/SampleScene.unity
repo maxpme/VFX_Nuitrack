@@ -681,6 +681,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f0a9c2f0a116ae458535271e068926b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scale: 1000
+  width: 640
+  height: 480
+  positionMap: {fileID: 8400000, guid: 39d1daf2c1cd0e149865d9fbd2fab7bb, type: 2}
+  threshold: 4
 --- !u!114 &1168604822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -742,7 +747,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168604820}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e6fbe8f96e7fe549a25f7f0831da227, type: 3}
   m_Name: 
@@ -755,4 +760,4 @@ MonoBehaviour:
   colorMap: {fileID: 8400000, guid: 35b3a344b812b6c47a121884072621a4, type: 2}
   depthThreshold: 4000
   threshold: 4000
-  maxLifetime: 0
+  maxLifetime: 1
