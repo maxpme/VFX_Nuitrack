@@ -10,7 +10,7 @@ public class FrameData : MonoBehaviour
     [SerializeField] private int width = 640;
     [SerializeField] private int height = 480;
     [SerializeField] private RenderTexture positionMap;
-    [SerializeField] private int threshold = 4;
+    [SerializeField] private float threshold = 4;
     [SerializeField] private int scaleZ = 1000;
 
     private int texWidth;
