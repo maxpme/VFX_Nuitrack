@@ -11,6 +11,7 @@ public class FrameData : MonoBehaviour
     [SerializeField] private int height = 480;
     [SerializeField] private RenderTexture positionMap;
     [SerializeField] private int threshold = 4;
+    [SerializeField] private int scaleZ = 1000;
 
     private int texWidth;
     private int texHeight;
@@ -65,20 +66,24 @@ public class FrameData : MonoBehaviour
         int height = df.Rows;
         int width = df.Cols;
 
+        Vector3 _projCoords=new Vector3();
+
         for (int y = 0; y < height; y++)
         {
             for (int x = 0; x < width; x++)
             {
 
-                if (df[y, x] < 0.1 || df[y, x] > threshold * scale)
+                if (df[y, x] < 0.1f || df[y, x] > threshold * scale)
                 {
-                    data = new Color(0, 0, 0, -2);
+                    data = new Color(0.0f, 0, 0, 0.0f);
                 }
                 else
                 {
-                    _positionCoords = NuitrackManager.DepthSensor.ConvertProjToRealCoords(x, y, df[y, x]).ToVector3();
+                    //_projCoords = new Vector3(x, y, df[y, x]);
+                    //_positionCoords = NuitrackManager.DepthSensor.ConvertProjToRealCoords(x, y, df[y, x]).ToVector3();
+
                     //Positions.Add(_positionCoords);
-                    data = new Color(_positionCoords.x / scale, _positionCoords.y / scale, _positionCoords.z / scale, 1.0f);
+                    data = new Color((float)x/scale,-(float)y / scale, (float)df[y, x] / scaleZ, 1.0f);
                 }
                 //texColor.SetPixel(x, y, colors[index]);
                 texPositions.SetPixel(x, y, data);
