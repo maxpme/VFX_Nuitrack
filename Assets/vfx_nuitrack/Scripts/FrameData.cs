@@ -14,6 +14,8 @@ public class FrameData : MonoBehaviour
     [SerializeField] private float threshold = 4;
     [SerializeField] private int scaleZ = 1000;
 
+    [SerializeField] private ComputeShader _colorCompute;
+
     private int texWidth;
     private int texHeight;
     private Color data;
@@ -26,6 +28,7 @@ public class FrameData : MonoBehaviour
 
     private List<Vector3> _positions = new List<Vector3>();
     private Color[] _colors = new Color[640 * 480];
+    private Color[] _positionsArray = new Color[640 * 480];
 
     public List<Vector3> Positions { get => _positions; private set => _positions = value; }
     public Color[] Colors { get => _colors; private set => _colors = value; }
@@ -45,7 +48,6 @@ public class FrameData : MonoBehaviour
 
     private void GetColorFrame(ColorFrame cf)
     {
-        //Colors = null;
         Color currentColor = new Color();
         int index = 0;
         int height = cf.Rows;
@@ -55,10 +57,11 @@ public class FrameData : MonoBehaviour
             for (int x = 0; x < width; x++)
             {
                 currentColor = new Color32(cf[y, x].Red, cf[y, x].Green, cf[y, x].Blue, 255);
-                texColors.SetPixel(x, y, currentColor);
+                Colors[index] = currentColor;
                 index++;
             }
         }
+        texColors.SetPixels(Colors);
         texColors.Apply();
 
         RenderTexture.active = colorMap;
@@ -66,32 +69,27 @@ public class FrameData : MonoBehaviour
     }
     private void GetDepthFrame(DepthFrame df)
     {
-        //Positions.Clear();
-
         int height = df.Rows;
         int width = df.Cols;
 
+        int index = 0;
         for (int y = 0; y < height; y++)
         {
             for (int x = 0; x < width; x++)
             {
                 if (df[y, x] < 0.1f || df[y, x] > threshold * scale)
                 {
-                    data = new Color(0.0f, 0, 0, 0.0f);
+                    data = new Color32(0, 0, 0, 0);
                 }
                 else
                 {
-                    //_projCoords = new Vector3(x, y, df[y, x]);
-                    //_positionCoords = NuitrackManager.DepthSensor.ConvertProjToRealCoords(x, y, df[y, x]).ToVector3();
-
-                    //Positions.Add(_positionCoords);
-                    data = new Color((float)x / scale, -(float)y / scale, (float)df[y, x] / scaleZ, 1.0f);
+                    data = new Color((float)x / scale, -(float)y / scale, (float)df[y, x] / scaleZ, 1);
                 }
-                //texColor.SetPixel(x, y, colors[index]);
-                texPositions.SetPixel(x, y, data);
+                _positionsArray[index] = data;
+                index++;
             }
         }
-
+        texPositions.SetPixels(_positionsArray);
         texPositions.Apply();
 
         RenderTexture.active = positionMap;
