@@ -2,14 +2,17 @@
 #pragma kernel ColorMain
 
 RWTexture2D<float4> ColorMap;
-//StructuredBuffer<float4> ColorBuffer;
-StructuredBuffer<uint> ColorBuffer;
-
+StructuredBuffer<float> ColorBuffer;
+//StructuredBuffer<uint> ColorBuffer;
+//vector<float,4>color;
 [numthreads(8,8,1)]
 void ColorMain (uint3 id : SV_DispatchThreadID)
 {
     uint i=id.x+id.y*640;
 
-    //float4 color=float4(ColorBuffer[id.x],ColorBuffer[id.y],ColorBuffer[id.z],1);
-    ColorMap[id.xy] = color;
+    //float4 color=float4(ColorBuffer[i+2],ColorBuffer[i+1],ColorBuffer[i],1);
+    //int4 color=int4(ColorBuffer[id.x+2],ColorBuffer[id.x+1],ColorBuffer[id.x],1);
+    //uint4 color=uint4(ColorBuffer[i],ColorBuffer[i],ColorBuffer[i],1)
+    
+    ColorMap[id.xy]=ColorBuffer[i];
 }

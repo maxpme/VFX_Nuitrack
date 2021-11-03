@@ -41,6 +41,9 @@ public class FrameDataCompute : MonoBehaviour
     private Color[] _colors = new Color[640 * 480];
     private Color[] _positionsArray = new Color[640 * 480];
     private byte[] _colorArr = new byte[640 * 480 * 3];
+    private float[] _colorArrF = new float[640 * 480];
+
+    private float onePixel;
 
     public List<Vector3> Positions { get => _positions; private set => _positions = value; }
     public Color[] Colors { get => _colors; private set => _colors = value; }
@@ -93,6 +96,16 @@ public class FrameDataCompute : MonoBehaviour
             }
         }*/
         Marshal.Copy(cf.Data, _colorArr, 0, cf.DataSize);
+        int arrIndex = 0;
+        while (index != cf.DataSize - 4)
+        {
+            onePixel = System.BitConverter.ToSingle(_colorArr, index);
+            _colorArrF[arrIndex] = onePixel;
+            index += 4;
+            arrIndex++;
+
+        }
+        
         //UnsafeUtility.SetUnmanagedData(_colorBuffer, cf.Data, cf.Cols*cf.Rows, sizeof(float)*4);
         /*
         
@@ -119,7 +132,8 @@ public class FrameDataCompute : MonoBehaviour
         _colorCompute.SetTexture(colorComputeKernel, "ColorMap", _tempColorMap);
 
         //_colorBuffer.SetData(Colors);
-        _colorBuffer.SetData(_colorArr);
+        //_colorBuffer.SetData(_colorArr);
+        _colorBuffer.SetData(_colorArrF);
         
 
         _colorCompute.SetBuffer(colorComputeKernel, "ColorBuffer", _colorBuffer);

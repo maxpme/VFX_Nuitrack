@@ -8,5 +8,6 @@ StructuredBuffer<float4> PositionBuffer;
 void PositionMain (uint3 id : SV_DispatchThreadID)
 {
     uint i=id.x+id.y*640;
-    PositionMap[id.xy]=PositionBuffer[i];
+    
+    PositionMap[id.xy]=float4(id.xy,0,0,1);
 }
