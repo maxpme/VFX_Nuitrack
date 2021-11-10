@@ -4,6 +4,9 @@ using UnityEngine;
 using nuitrack;
 using Vector3 = UnityEngine.Vector3;
 using System.Runtime.InteropServices;
+using System;
+using UnityEngine.UI;
+using System.Threading.Tasks;
 
 public class FrameDataCompute : MonoBehaviour
 {
@@ -40,14 +43,14 @@ public class FrameDataCompute : MonoBehaviour
     private List<Vector3> _positions = new List<Vector3>();
     private Color[] _colors = new Color[640 * 480];
     private Color[] _positionsArray = new Color[640 * 480];
-    private byte[] _colorArr = new byte[640 * 480 * 3];
-    private float[] _colorArrF = new float[640 * 480];
+
+    private byte[] _colorBytes = new byte[640*480*3];
+    private int[] _colorsArrInt = new int[640 * 480];
 
     private float onePixel;
 
     public List<Vector3> Positions { get => _positions; private set => _positions = value; }
     public Color[] Colors { get => _colors; private set => _colors = value; }
-
 
     private void Start()
     {
@@ -60,8 +63,7 @@ public class FrameDataCompute : MonoBehaviour
         texWidth = texPositions.width;
         texHeight = texPositions.height;
 
-        //_colorBuffer = new ComputeBuffer(640 * 480, sizeof(float) * 4);
-        _colorBuffer = new ComputeBuffer(640 * 480, sizeof(float)*4);
+        _colorBuffer = new ComputeBuffer(640 * 480, sizeof(int));
         _positionBuffer = new ComputeBuffer(640 * 480, sizeof(float)*4);
 
         _tempColorMap = new RenderTexture(640, 480, 0, colorMap.format);
@@ -77,52 +79,23 @@ public class FrameDataCompute : MonoBehaviour
     {
         
         Color currentColor = new Color32();
+        byte[] currentByte= new byte[4];
         int index = 0;
         int height = cf.Rows;
         int width = cf.Cols;
 
-        /*for (int y = 0; y < height; y++)
-        {
-            for (int x = 0; x < width; x++)
-            {
-                //currentColor.(cf[y, x].Red, cf[y, x].Green, cf[y, x].Blue, 255);
-                currentColor.r = cf[y, x].Red;
-                currentColor.g = cf[y, x].Green;
-                currentColor.b = cf[y, x].Blue;
-                currentColor.a = 255;
-                //Colors[index] = currentColor;
-                
-                index++;
-            }
-        }*/
-        Marshal.Copy(cf.Data, _colorArr, 0, cf.DataSize);
-        int arrIndex = 0;
-        while (index != cf.DataSize - 4)
-        {
-            onePixel = System.BitConverter.ToSingle(_colorArr, index);
-            _colorArrF[arrIndex] = onePixel;
-            index += 4;
-            arrIndex++;
+        Marshal.Copy(cf.Data, _colorBytes, 0, cf.DataSize);
 
-        }
-        
-        //UnsafeUtility.SetUnmanagedData(_colorBuffer, cf.Data, cf.Cols*cf.Rows, sizeof(float)*4);
-        /*
-        
-        /*65ms - 15fps*/
-        /*
-        for (int y = 0; y < height; y++)
+        for (int x = 0; x < _colorBytes.Length - 3; x += 3)
         {
-            for (int x = 0; x < width; x++)
-            {
-                currentColor = new Color32(cf[y, x].Red, cf[y, x].Green, cf[y, x].Blue, 255);
-                Colors[index] = currentColor;
-                index++;
-            }
-        }
+            currentByte[0] = 255;   //a
+            currentByte[1] = _colorBytes[x];    //r
+            currentByte[2] = _colorBytes[x + 1];    //g
+            currentByte[3] = _colorBytes[x + 2];    //b
 
-        /**/
-        /*1ms*/
+            _colorsArrInt[index] = BitConverter.ToInt32(currentByte, 0);
+            index++;
+        }
 
         int colorComputeKernel = _colorCompute.FindKernel("ColorMain");
         _colorCompute.GetKernelThreadGroupSizes(colorComputeKernel, out _threadGroupSizeX,
@@ -131,9 +104,7 @@ public class FrameDataCompute : MonoBehaviour
 
         _colorCompute.SetTexture(colorComputeKernel, "ColorMap", _tempColorMap);
 
-        //_colorBuffer.SetData(Colors);
-        //_colorBuffer.SetData(_colorArr);
-        _colorBuffer.SetData(_colorArrF);
+        _colorBuffer.SetData(_colorsArrInt);
         
 
         _colorCompute.SetBuffer(colorComputeKernel, "ColorBuffer", _colorBuffer);
@@ -141,14 +112,9 @@ public class FrameDataCompute : MonoBehaviour
         var threadGroupsX = (int)(640 / _threadGroupSizeX);
         var threadGroupsY = (int)(480 / _threadGroupSizeY);
         _colorCompute.Dispatch(colorComputeKernel,threadGroupsX,threadGroupsY,1);
-        /**/
-
-        
-       /*0ms*/
         
         Graphics.CopyTexture(_tempColorMap, colorMap);
         
-        /**/
     }
     private void GetDepthFrame(DepthFrame df)
     {
