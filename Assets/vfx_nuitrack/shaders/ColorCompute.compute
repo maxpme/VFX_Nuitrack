@@ -2,14 +2,37 @@
 #pragma kernel ColorMain
 
 RWTexture2D<float4> ColorMap;
-StructuredBuffer<int> ColorBuffer;
+RWTexture2D<float4>TestMap;
+Texture2D<float4>RawTexture;
+
+//StructuredBuffer<uint> ColorBuffer;
+
+inline half4 GammaToLinearSpace (half4 sRGB)
+{
+    return sRGB * (sRGB * (sRGB * 0.305306011h + 0.682171111h) + 0.012522878h);
+}
+
 
 [numthreads(8,8,1)]
 void ColorMain (uint3 id : SV_DispatchThreadID)
 {
     uint i=id.x+id.y*640;
 
-    float4 color = (uint4(ColorBuffer[i]>>8, ColorBuffer[i]>>16, ColorBuffer[i]>>24, 255) & 0xffU) / 255.0;
-    //ColorMap[id.xy]=lerp(color,1,0.1);
-    ColorMap[id.xy]=color;
+    //uint raw = ColorBuffer[i];
+    
+    //float3 color = (uint3(raw, raw>>8, raw>>16)&0xffU) / 255.0;
+    //float luma = dot(color, float3(0.2126, 0.7152, 0.0122));
+
+    //color = GammaToLinearSpace(color);
+
+    //ColorMap[id.xy]=float4(color,1.0);
+
+
+    //TestMap[id.xy]=float4(color,1.0);
+    float4 color=float4(RawTexture[id.xy].z,RawTexture[id.xy].y,RawTexture[id.xy].x,1.0);
+    float luma = dot(color,float4(0.2126,0.7152,0.0122,1.0));
+    //color = lerp(0.1, 1, lerp(luma, color, 0.1));//keying to light
+    color = GammaToLinearSpace(color);
+
+    TestMap[id.xy]=color;
 }

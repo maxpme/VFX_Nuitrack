@@ -1059,10 +1059,12 @@ MonoBehaviour:
   height: 480
   colorMap: {fileID: 8400000, guid: 35b3a344b812b6c47a121884072621a4, type: 2}
   positionMap: {fileID: 8400000, guid: 39d1daf2c1cd0e149865d9fbd2fab7bb, type: 2}
+  TestMap: {fileID: 8400000, guid: e471dcf27565a734ba7812d33aba19f9, type: 2}
   threshold: 4
   scaleZ: 1000
   _colorCompute: {fileID: 7200000, guid: 42115653c951cc540985a1a62bc1fadb, type: 3}
   _positionCompute: {fileID: 7200000, guid: 015b7a9bbe8dc994ea99f72c4dbb3b4e, type: 3}
+  testMaterial: {fileID: 2100000, guid: 201fbc0cb5a80d2498eb69a6fd1ef997, type: 2}
 --- !u!1 &2020273569
 GameObject:
   m_ObjectHideFlags: 0

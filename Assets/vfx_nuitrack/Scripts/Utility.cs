@@ -32,7 +32,7 @@ namespace Rsvfx
             _args5[1] = 0;      // source offset
             _args5[2] = 0;      // buffer offset
             _args5[3] = count;
-            _args5[4] = stride;
+            _args5[4] = stride; //sizeof
 
             _method.Invoke(buffer, _args5);
         }
