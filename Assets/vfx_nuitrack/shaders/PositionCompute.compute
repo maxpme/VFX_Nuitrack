@@ -5,7 +5,10 @@ RWTexture2D<float4>PositionMap;
 //StructuredBuffer<float4> PositionBuffer;
 //StructuredBuffer<int> PositionBuffer;
 //StructuredBuffer<float> PositionBuffer;
+StructuredBuffer<uint>DepthBuffer;
 int scale=1000;
+float maxDepthSensor=10.0f;
+float DepthThreshold;
 
 [numthreads(8,8,1)]
 void PositionMain (uint3 id : SV_DispatchThreadID)
@@ -17,8 +20,34 @@ void PositionMain (uint3 id : SV_DispatchThreadID)
     //PositionMap[id.xy]=float4(0,0,0.7,1.0);
     //PositionMap[id.xy]=float4(id.xy,0,0,1);
 
+	uint depthVal = DepthBuffer[i >> 1];
+	//uint depthVal = DepthBuffer[i];
+
+	float depth;
+
+	// Shift trick, because in the Shader we read two values (Int16) as one (Int32)
+	if(i % 2 != 0)
+		depth = float(depthVal >> 16);  //first ushort
+	else
+		depth = float((depthVal << 16) >> 16);  //second ushort
+
+	//depth = depth / (1000 * maxDepthSensor);
+	//float DepthThreshold=4000.0f;
+
+	float mask=true;
+	if(depth < DepthThreshold){
+		mask=1.0;
+	}
+	else{
+		mask=0.0;
+	}
+
     //float4 depth=float4(id.x,id.y,PositionBuffer[i],1);
     //PositionMap[id.xy]=depth;
+	//depth=float(65535*(2.0/65535));
 
-    PositionMap[id.xy]=float4(id.x,0.0,id.x+2,1.0);
+    //PositionMap[id.xy]=float4(float(id.x/255.0),float(id.y/255.0),(depth/65535),1.0);
+	float3 pos=float3(id.x/255.0,-(id.y/255.0),depth/1000);
+    //PositionMap[id.xy]=float4(float(id.x/255.0),-float(id.y/255.0),depth/1000,mask);
+    PositionMap[id.xy]=float4(lerp(0,pos,mask),mask);
 }

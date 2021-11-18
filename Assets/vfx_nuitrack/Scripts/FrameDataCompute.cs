@@ -274,6 +274,8 @@ public class FrameDataCompute : MonoBehaviour
 
         RenderTexture.active = positionMap;
         Graphics.Blit(texPositions, positionMap);*/
+        ComputeBuffer depthBuffer = new ComputeBuffer(df.DataSize / 2, sizeof(uint));
+        byte[] depthData = new byte[df.DataSize];
         
         int positionComputeKernel = _positionCompute.FindKernel("PositionMain");
         _positionCompute.GetKernelThreadGroupSizes(positionComputeKernel, out _threadGroupSizeX,
@@ -282,8 +284,18 @@ public class FrameDataCompute : MonoBehaviour
 
         _positionCompute.SetTexture(positionComputeKernel, "PositionMap", _tempPositionMap);
 
-        //_positionBuffer.SetData(_positionsArray);
+        _positionCompute.SetBuffer(positionComputeKernel, "DepthBuffer", depthBuffer);
+
+        _positionCompute.SetFloat("DepthThreshold", 2000.0f);
+
+        Marshal.Copy(df.Data, depthData, 0, depthData.Length);
+
+        depthBuffer.SetData(depthData);
+
         
+
+        //_positionBuffer.SetData(_positionsArray);
+
         //_positionBuffer.SetData(_depthData);
         //_positionBuffer.SetData(_depth);
 
