@@ -2,10 +2,9 @@
 #pragma kernel PositionMain
 
 RWTexture2D<float4>PositionMap;
-//StructuredBuffer<float4> PositionBuffer;
-//StructuredBuffer<int> PositionBuffer;
-//StructuredBuffer<float> PositionBuffer;
+
 StructuredBuffer<uint>DepthBuffer;
+
 int scale=1000;
 float maxDepthSensor=10.0f;
 float DepthThreshold;
@@ -34,6 +33,8 @@ void PositionMain (uint3 id : SV_DispatchThreadID)
 	//depth = depth / (1000 * maxDepthSensor);
 	//float DepthThreshold=4000.0f;
 
+	float DepthThreshold=4.0f;
+	
 	float mask=true;
 	if(depth < DepthThreshold){
 		mask=1.0;
@@ -42,12 +43,14 @@ void PositionMain (uint3 id : SV_DispatchThreadID)
 		mask=0.0;
 	}
 
-    //float4 depth=float4(id.x,id.y,PositionBuffer[i],1);
-    //PositionMap[id.xy]=depth;
-	//depth=float(65535*(2.0/65535));
-
     //PositionMap[id.xy]=float4(float(id.x/255.0),float(id.y/255.0),(depth/65535),1.0);
-	float3 pos=float3(id.x/255.0,-(id.y/255.0),depth/1000);
+	//float3 pos=float3(id.x/255.0,-(id.y/255.0),depth/1000);
+
+
+	float3 pos=float3(id.x/255.0,id.y/255.0,depth/1000);
+	
     //PositionMap[id.xy]=float4(float(id.x/255.0),-float(id.y/255.0),depth/1000,mask);
-    PositionMap[id.xy]=float4(lerp(0,pos,mask),mask);
+	PositionMap[id.xy]=float4(pos,mask);
+
+	//PositionMap[id.xy]=float4(lerp(0,pos,mask),mask);
 }
