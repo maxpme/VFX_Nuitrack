@@ -9,29 +9,32 @@ using UnityEngine.UI;
 using System.Threading.Tasks;
 using System.Reflection;
 using UnityEngine.Experimental.Rendering;
+using UnityEngine.Serialization;
 
 public class FrameDataCompute : MonoBehaviour
 {
-    [SerializeField] private int width = 640;
-    [SerializeField] private int height = 480;
+    [FormerlySerializedAs("width")]
+    [Header("Input Resolution")]
+    [SerializeField] private int _width = 640;
+    [FormerlySerializedAs("height")] [SerializeField] private int _height = 480;
     
-    [SerializeField] private RenderTexture colorMap;
-    [SerializeField] private RenderTexture positionMap;
-    //
-    [SerializeField] private RenderTexture TestMap;
-    //
+    [Header("OutputTextures")]
+    [FormerlySerializedAs("colorMap")] [SerializeField] private RenderTexture _colorMap;
+    [FormerlySerializedAs("positionMap")] [SerializeField] private RenderTexture _positionMap;
+
     [Header("Compute Shaders Section")]
     [SerializeField] private ComputeShader _colorCompute;
     [SerializeField] private ComputeShader _positionCompute;
 
     //test
+    [SerializeField] private RenderTexture TestMap;
     [SerializeField]
     private Material testMaterial;
     //
 
-    private int texWidth;
-    private int texHeight;
-    private Color32 data;
+    private int _texWidth;
+    private int _texHeight;
+    private Color32 _data;
 
     private ComputeBuffer _colorBuffer;
     private ComputeBuffer _positionBuffer;
@@ -57,30 +60,52 @@ public class FrameDataCompute : MonoBehaviour
     
     private void Start()
     {
-        NuitrackManager.onColorUpdate += GetColorFrame;
-        NuitrackManager.onDepthUpdate += GetDepthFrame;
+        Initialize();
+        
+        _texWidth = _texPositions.width;
+        _texHeight = _texPositions.height;
+        
+        // _tempTestMap = new RenderTexture(640, 480, 0, TestMap.format);
+        // _tempTestMap.enableRandomWrite = true;
+        // _tempTestMap.Create();
+        
+    }
 
-        _texColors = new Texture2D(width, height, TextureFormat.RGBAFloat, false);
-        _texPositions = new Texture2D(width, height, TextureFormat.RGBAFloat, false);
+    private void Initialize()
+    {
+        SubscribeToFrameData();
+        CreateOutputTextures();
+        CreateTempTextures();
+        CreateComputerBuffers();
+    }
 
-        texWidth = _texPositions.width;
-        texHeight = _texPositions.height;
-
+    private void CreateComputerBuffers()
+    {
         _colorBuffer = new ComputeBuffer(640 * 480, sizeof(int));
-        //_positionBuffer = new ComputeBuffer(640 * 480*2, sizeof(int));
         _positionBuffer = new ComputeBuffer(640 * 480*2, sizeof(float));
+    }
 
-        _tempColorMap = new RenderTexture(640, 480, 0, colorMap.format);
+    private void CreateTempTextures()
+    {
+        _tempColorMap = new RenderTexture(640, 480, 0, _colorMap.format);
         _tempColorMap.enableRandomWrite = true;
         _tempColorMap.Create();
-
-        _tempTestMap = new RenderTexture(640, 480, 0, TestMap.format);
-        _tempTestMap.enableRandomWrite = true;
-        _tempTestMap.Create();
-
-        _tempPositionMap = new RenderTexture(640, 480, 0, positionMap.format);
+        
+        _tempPositionMap = new RenderTexture(640, 480, 0, _positionMap.format);
         _tempPositionMap.enableRandomWrite = true;
         _tempPositionMap.Create();
+    }
+
+    private void CreateOutputTextures()
+    {
+        _texColors = new Texture2D(_width, _height, TextureFormat.RGBAFloat, false);
+        _texPositions = new Texture2D(_width, _height, TextureFormat.RGBAFloat, false);
+    }
+
+    private void SubscribeToFrameData()
+    {
+        NuitrackManager.onColorUpdate += GetColorFrame;
+        NuitrackManager.onDepthUpdate += GetDepthFrame;
     }
 
     static MethodInfo _method;
@@ -127,11 +152,11 @@ public class FrameDataCompute : MonoBehaviour
 
         _colorCompute.SetTexture(colorComputeKernel, "RawTexture", rawColorTexture);
 
-        var threadGroupsX = (int)(texWidth / _threadGroupSizeX);
-        var threadGroupsY = (int)(texHeight / _threadGroupSizeY);
+        var threadGroupsX = (int)(_texWidth / _threadGroupSizeX);
+        var threadGroupsY = (int)(_texHeight / _threadGroupSizeY);
         _colorCompute.Dispatch(colorComputeKernel, threadGroupsX, threadGroupsY, 1);
 
-        Graphics.CopyTexture(_tempColorMap, colorMap);
+        Graphics.CopyTexture(_tempColorMap, _colorMap);
         Graphics.CopyTexture(_tempTestMap, TestMap);
 
     }
@@ -159,6 +184,6 @@ public class FrameDataCompute : MonoBehaviour
         var threadGroupsY = (int)(480 / _threadGroupSizeY);
         _positionCompute.Dispatch(positionComputeKernel, threadGroupsX, threadGroupsY, 1);
         /**/
-        Graphics.CopyTexture(_tempPositionMap, positionMap);
+        Graphics.CopyTexture(_tempPositionMap, _positionMap);
     }
 }

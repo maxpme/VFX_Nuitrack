@@ -19,7 +19,7 @@ public class PointCloudRenderer : MonoBehaviour
 
     private int texWidth;
     private int texHeight;
-    private FrameData fd;
+    // private FrameData fd;
 
     Texture2D texColor;
     Texture2D texPositions;
@@ -37,13 +37,13 @@ public class PointCloudRenderer : MonoBehaviour
         texWidth = texColor.width;
         texHeight = texColor.height;
 
-        fd = GetComponent<FrameData>();
+        // fd = GetComponent<FrameData>();
 }
 
     private void Update()
     {
         //SetParticles(GetComponent<FrameData>().Positions, GetComponent<FrameData>().Colors);
-        SetParticles(fd.Positions);
+        // SetParticles(fd.Positions);
     }
     private float GetLifetime(float z)
     {
