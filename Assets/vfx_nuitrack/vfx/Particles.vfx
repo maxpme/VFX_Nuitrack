@@ -189,9 +189,9 @@ MonoBehaviour:
     position:
       serializedVersion: 2
       x: -219
-      y: -122
-      width: 693
-      height: 329
+      y: -154
+      width: 647
+      height: 366
     contents:
     - model: {fileID: 8926484042661614890}
       id: 0
@@ -214,8 +214,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: -1763
     y: -835
-    width: 2771
-    height: 2351
+    width: 2819
+    height: 2371
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -978,7 +978,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.012000000104308129,"y":0.10000000149011612}'
+      m_SerializableObject: '{"x":0.10000000149011612,"y":0.10000000149011612}'
     m_Space: 2147483647
   m_Property:
     name: Scale
@@ -6897,7 +6897,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 157, y: -58}
+  m_UIPosition: {x: 152, y: -95}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -6931,7 +6931,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":8400000,"guid":"d8e773d5bbad0c05c965e6b888e86b55","type":2}}'
+      m_SerializableObject: '{"obj":{"fileID":8400000,"guid":"39d1daf2c1cd0e149865d9fbd2fab7bb","type":2}}'
     m_Space: 2147483647
   m_Property:
     name: texture
@@ -7195,7 +7195,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":8400000,"guid":"e96cdc3b37ad79be39d14ce547fe0da1","type":2}}'
+      m_SerializableObject: '{"obj":{"fileID":8400000,"guid":"35b3a344b812b6c47a121884072621a4","type":2}}'
     m_Space: 2147483647
   m_Property:
     name: texture

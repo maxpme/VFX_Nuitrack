@@ -13,14 +13,8 @@ float DepthThreshold;
 void PositionMain (uint3 id : SV_DispatchThreadID)
 {
     uint i=id.x+id.y*640;
-    
-    //PositionMap[id.xy]=float4(id.x,id.y,PositionBuffer[i],1);
-    //float4 depth=(uint4(0,0,PositionBuffer[i],255))/255.0;
-    //PositionMap[id.xy]=float4(0,0,0.7,1.0);
-    //PositionMap[id.xy]=float4(id.xy,0,0,1);
 
 	uint depthVal = DepthBuffer[i >> 1];
-	//uint depthVal = DepthBuffer[i];
 
 	float depth;
 
@@ -29,13 +23,11 @@ void PositionMain (uint3 id : SV_DispatchThreadID)
 		depth = float(depthVal >> 16);  //first ushort
 	else
 		depth = float((depthVal << 16) >> 16);  //second ushort
-
-	//depth = depth / (1000 * maxDepthSensor);
-	//float DepthThreshold=4000.0f;
-
-	float DepthThreshold=4.0f;
 	
-	float mask=true;
+	float DepthThreshold=4000.0f;
+	
+	float mask=1.0;
+	
 	if(depth < DepthThreshold){
 		mask=1.0;
 	}
@@ -43,14 +35,8 @@ void PositionMain (uint3 id : SV_DispatchThreadID)
 		mask=0.0;
 	}
 
-    //PositionMap[id.xy]=float4(float(id.x/255.0),float(id.y/255.0),(depth/65535),1.0);
-	//float3 pos=float3(id.x/255.0,-(id.y/255.0),depth/1000);
-
-
 	float3 pos=float3(id.x/255.0,id.y/255.0,depth/1000);
 	
-    //PositionMap[id.xy]=float4(float(id.x/255.0),-float(id.y/255.0),depth/1000,mask);
-	PositionMap[id.xy]=float4(pos,mask);
-
-	//PositionMap[id.xy]=float4(lerp(0,pos,mask),mask);
+	PositionMap[id.xy]=float4(pos,mask); //with mask
+	// PositionMap[id.xy]=float4(pos,1.0); //without mask
 }

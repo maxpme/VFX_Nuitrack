@@ -39,6 +39,7 @@ public class FrameDataCompute : MonoBehaviour
 
     private Texture2D _rawColorTexture;
     
+    
     /*utils*/
     private byte[] _depthData;
     
@@ -52,6 +53,8 @@ public class FrameDataCompute : MonoBehaviour
         CreateOutputTextures();
         CreateTempTextures();
         CreateComputerBuffers();
+        
+        _rawColorTexture=new Texture2D(640, 480, TextureFormat.RGB24, false);
         
         SubscribeToFrameData();
         
@@ -90,7 +93,7 @@ public class FrameDataCompute : MonoBehaviour
     
     private void GetColorFrame(ColorFrame cf)
     {
-        _rawColorTexture=new Texture2D(cf.Cols, cf.Rows, TextureFormat.RGB24, false);
+        // _rawColorTexture=new Texture2D(cf.Cols, cf.Rows, TextureFormat.RGB24, false);
         
         //TODO: encapsulate Compute to class
         ColorDataLoad(_rawColorTexture, cf);
