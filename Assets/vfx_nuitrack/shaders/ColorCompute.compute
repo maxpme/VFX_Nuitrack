@@ -34,5 +34,6 @@ void ColorMain (uint3 id : SV_DispatchThreadID)
     //color = lerp(0.1, 1, lerp(luma, color, 0.1));//keying to light
     color = GammaToLinearSpace(color);
 
-    TestMap[id.xy]=color;
+    // TestMap[id.xy]=color;
+    ColorMap[id.xy]=color;
 }
