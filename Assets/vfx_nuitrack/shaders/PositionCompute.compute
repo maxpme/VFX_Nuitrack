@@ -24,19 +24,12 @@ void PositionMain (uint3 id : SV_DispatchThreadID)
 	else
 		depth = float((depthVal << 16) >> 16);  //second ushort
 	
-	float DepthThreshold=4000.0f;
+	float DepthThreshold=2000.0f;
 	
-	float mask=1.0;
-	
-	if(depth < DepthThreshold){
-		mask=1.0;
-	}
-	else{
-		mask=0.0;
-	}
+	bool mask=(depth<DepthThreshold);
 
 	float3 pos=float3(id.x/255.0,id.y/255.0,depth/1000);
 	
-	PositionMap[id.xy]=float4(pos,mask); //with mask
-	// PositionMap[id.xy]=float4(pos,1.0); //without mask
+	// PositionMap[id.xy]=float4(pos,mask); //with mask
+	PositionMap[id.xy]=float4(lerp(0,pos,mask),mask); //with mask
 }
