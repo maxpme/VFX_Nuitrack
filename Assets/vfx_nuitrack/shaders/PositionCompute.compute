@@ -28,8 +28,14 @@ void PositionMain (uint3 id : SV_DispatchThreadID)
 	
 	bool mask=(depth<DepthThreshold);
 
-	float3 pos=float3(id.x/255.0,id.y/255.0,depth/1000);
+	float f_x=(id.x-322.34)/608.12;
+	float f_y=(id.y-240.1)/607.44;
+
+	float3 f_pos=(f_x, f_y, 1) * DepthThreshold;
+
 	
-	// PositionMap[id.xy]=float4(pos,mask); //with mask
-	PositionMap[id.xy]=float4(lerp(0,pos,mask),mask); //with mask
+	
+	float3 pos=float3(id.x/640.0,id.y/480.0,depth/1000);
+	
+	PositionMap[id.xy]=float4(lerp(f_pos,pos,mask),mask); //with mask work restore it
 }
